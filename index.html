@@ -6,28 +6,25 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="hidden">"Мишка" - интернет-магазин</h1>
       <div class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="Mishka"/>
+        Mishka
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">Меню</button>
+
+        Написать меню на инпутах
+
+
       </nav>
     </header>
     <nav class="category-nav">
-      <div class="category-nav__bg-img">
-      <h2 class="category-nav__slogan">Милые штуки ручной работы для дома</h2>
-      </div>
-      <ul class="category-nav__list">
-        <li class="category-nav__item category-nav__item--active">
-          Предметы интерьера
-          <img class="category-nav__img" src="http://placehold.it/150x100" alt="icon" />
-        </li>
-        <li class="category-nav__item">
-          Детские игрушки
-          <img class="category-nav__img" src="http://placehold.it/150x100" alt="icon" />
-        </li>
-      </ul>
+      <h1 class="category-nav__slogan">Милые штуки ручной работы для дома</h2>
+      <a class="category-nav__item category-nav__item--active">
+        Предметы интерьера
+      </a>
+      <a class="category-nav__item">
+        Детские игрушки
+      </a>
     </nav>
     <section class="product-of-week">
       <h2 class="product-of-week__product-name">Вязаные корзинки</h2>
@@ -60,35 +57,19 @@
         </tr>
       </table>
       <img class="product-of-week__img" src="http://placehold.it/150x100" alt="корзинки" />
-      <p class="product-of-week__price">Цена:<span class="product-of-week__price--value">990</span>руб.</p>
+      <p class="product-of-week__price">Цена: 990 руб.</p>
       <a class="product-of-week__order btn" href="#">Заказать</a>
     </section>
     <section class="about-us">
       <h2 class="about-us__title">Коротко о нас</h2>
-      <img class="about-us__icons" src="http://placehold.it/150x100" alt="иконка"/>
-      <p class="about-us__description-text">
-        Экологически чистые материалы
-      </p>
-      <img class="about-us__icons" src="http://placehold.it/150x100" alt="иконка"/>
-      <p class="about-us__description-text">
-        Скандинавский стиль по российской цене
-      </p>
-      <img class="about-us__icons" src="http://placehold.it/150x100" alt="иконка"/>
-      <p class="about-us__description-text">
-        Увеличивает лайки на фотографиях
-      </p>
-      <img class="about-us__icons" src="http://placehold.it/150x100" alt="иконка"/>
-      <p class="about-us__description-text">
-        Связано вручную с любовью и умилением
-      </p>
-      <img class="about-us__icons" src="http://placehold.it/150x100" alt="иконка"/>
-      <p class="about-us__description-text">
-        Поддержка отечественного производителя
-      </p>
-      <img class="about-us__icons" src="http://placehold.it/150x100" alt="иконка"/>
-      <p class="about-us__description-text">
-        Поставляется в подарочной упаковке
-      </p>
+      <ul>
+        <li class="about-us__description-text">Экологически чистые материалы</li>
+        <li class="about-us__description-text">Скандинавский стиль по российской цене</li>
+        <li class="about-us__description-text">Увеличивает лайки на фотографиях</li>
+        <li class="about-us__description-text">Связано вручную с любовью и умилением</li>
+        <li class="about-us__description-text">Поддержка отечественного производителя</li>
+        <li class="about-us__description-text">Поставляется в подарочной упаковке</li>
+      </ul>
     </section>
     <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>
@@ -97,50 +78,28 @@
         </p>
         <cite class="reviews__author-name">Анастасия Красильникова</cite>
         <cite class="reviews__author-nickname">@misssssiskras</cite>
-        <button class="reviews__prev btn" type="button">&#8592;</button>
-        <button class="reviews__next btn" type="button">&#8594;</button>
+        <button class="reviews__prev btn" type="button">&larr;</button>
+        <button class="reviews__next btn" type="button">&rarr;</button>
       </blockquote>
       <a class="reviews__write  btn" href="#">Написать</a>
     </section>
     <article class="contacts">
       <h3 class="contacts__title">Контакты</h3>
-      <table class="contacts__data">
-        <tr>
-          <td class="contacts__e-mail">
-            e-mail:
-          </td>
-          <td class="contacts__e-mail-data">
-            info@mimimishkashop.ru
-          </td>
-        </tr>
-        <tr>
-          <td class="contacts__adress">
-            адрес:
-          </td>
-          <td class="contacts__adress-data">
-            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-          </td>
-        </tr>
-      </table>
-      <p>
-        <img src="http://placehold.it/150x100" alt="карта" usemap="#Map" />
-        <map name="Map">
-          <area href="#" alt="мишка" />
-        </map>
-      </p>
+      <div class="contacts__e-mail">e-mail: info@mimimishkashop.ru</div>
+      <div class="contacts__adress">адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</div>
+      <div class="Map">Карта
+      </div>
       <a class="contacts__write-to-us btn" href="#">Напишите нам</a>
     </article>
     <footer class="page-footer">
-      <div class="page-footer__social-wrapper">
-        <span class="social-links">
-          <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy"></a>
-          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
-          <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru"></a>
-        </span>
-      </div>
-      <div class="page-footer__copyright">
-        <span class="page-footer__copyright-link">Разработано<a class="page-footer__logo-academy" href="https://htmlacademy.ru"><img src="#" </a></span>
-      </div>
+      <article class="social">
+        <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy"></a>
+        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
+        <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru"></a>
+      </article>
+      <article class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru">Разработано</a>
+      </article>
     </footer>
   </body>
 </html>

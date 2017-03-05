@@ -6,54 +6,44 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="hidden">"Мишка" - интернет-магазин</h1>
       <div class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="Mishka"/>
+        Mishka
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">Меню</button>
+
+        Написать меню на инпутах
+
+
       </nav>
     </header>
-    <section class="catalog">
+    <article class="catalog">
       <h1 class="catalog__title">Каталог товаров</h1>
-      <div class="catalog__wrapper-list">
-        <div class="product-item">
-          <img class="product-item__img" src="http://placehold.it/150x100" />
-          <h3 class="product-item__name">Зайчик-попрыгайчик</h3>
-          <p class="product-item__description">
-            Рост 30 см, вес 200 г
-          </p>
-          <p class="product-item__price-wrapper">
-            <span class="price">1200 руб.</span><img class="shopping-bag-icon" src="http://placehold.it/150x100" />
-          </p>
-        </div>
-        <div class="product-item">
-          <img class="product-item__img" src="http://placehold.it/150x100" />
-          <h3 class="product-item__name">Корзинка для белья</h3>
-          <p class="product-item__description">
-            Диаметр 15 см, высота 10 см
-          </p>
-          <p class="product-item__price-wrapper">
-            <span class="price">690 руб.</span><img class="shopping-bag-icon" src="http://placehold.it/150x100" />
-          </p>
-        </div>
-        <div class="product-item">
-          <img class="product-item__img" src="http://placehold.it/150x100" />
-          <h3 class="product-item__name">Большая корзинка для игрушек</h3>
-          <p class="product-item__description">
-            Диаметр 30 см, высота 30 см
-          </p>
-          <p class="product-item__price-wrapper">
-            <span class="price">1500 руб.</span><img class="shopping-bag-icon" src="http://placehold.it/150x100" />
-          </p>
-        </div>
-      </div>
-    </section>
+      <figure class="product-item">
+        <p><img class="product-item__img" src="http://placehold.it/150x100" /></p>
+        <h3 class="product-item__name">Зайчик-попрыгайчик</h3>
+        <figcaption class="product-item__description">
+          Рост 30 см, вес 200 г</figcaption>
+        <div class="price">1200 руб.</div>
+      </figure>
+      <figure class="product-item">
+        <p><img class="product-item__img" src="http://placehold.it/150x100" /></p>
+        <h3 class="product-item__name">Корзинка для белья</h3>
+        <figcaption class="product-item__description">
+          Диаметр 15 см, высота 10 см</figcaption>
+        <div class="price">690 руб.</div>
+      </figure>
+      <figure class="product-item">
+        <p><img class="product-item__img" src="http://placehold.it/150x100" /></p>
+        <h3 class="product-item__name">Большая корзинка для игрушек</h3>
+        <figcaption class="product-item__description">
+          Диаметр 30 см, высота 30 см</figcaption>
+        <div class="price">1500 руб.</div>
+      </figure>
+    </article>
     <section class="production-process">
-      <img class="production-process__icon-video" src="#" />
       <h3 class="production-process__title">Процесс производства</h3>
-      <div class="production-process__video-wrapper">
-        <video width="200" height="100" controls="controls" poster="http://placehold.it/150x100">
+        <video width="200" height="100" controls="controls">
           <source src="#" />
         </video>
       </div>
@@ -63,16 +53,14 @@
       <a class="production-process__order btn" href="#">Сделать заказ</a>
     </section>
     <footer class="page-footer">
-      <div class="page-footer__social-wrapper">
-        <span class="social-links">
-          <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy"></a>
-          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
-          <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru"></a>
-        </span>
-      </div>
-      <div class="page-footer__copyright">
-        <span class="page-footer__copyright-link">Разработано<a class="page-footer__logo-academy" href="https://htmlacademy.ru"><img src="#" </a></span>
-      </div>
+      <article class="social">
+        <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy"></a>
+        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
+        <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru"></a>
+      </article>
+      <article class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru">Разработано</a>
+      </article>
     </footer>
   </body>
 </html>
