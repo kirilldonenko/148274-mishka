@@ -8,7 +8,6 @@
   <body class="page">
     <header class="page-header">
       <div class="page-header__logo">
-        Mishka
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">Меню</button>
@@ -20,57 +19,63 @@
       </nav>
     </header>
     <nav class="category-nav">
-      <h1 class="category-nav__slogan">Милые штуки ручной работы для дома</h2>
-      <a class="category-nav__item category-nav__item--active" href="#">
-        Предметы интерьера
-      </a>
-      <a class="category-nav__item" href="#">
-        Детские игрушки
-      </a>
+      <div class="category-nav__wrap-h2">
+        <h1 class="category-nav__slogan">Милые штуки ручной работы для дома</h2>
+      </div>
+      <div class="category-nav__wrap">
+        <a class="category-nav__item" href="#">
+          Предметы интерьера
+        </a>
+      </div>
+      <div class="category-nav__wrap">
+        <a class="category-nav__item" href="#">
+          Детские игрушки
+        </a>
+      </div>
     </nav>
     <section class="product-of-week">
       <h2 class="product-of-week__product-name">Вязаные корзинки</h2>
-      <p class="product-of-week__headline">Товар недели</p>
+      <h3 class="product-of-week__headline">Товар недели</h3>
       <p class="product-of-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
       <table class="product-of-week__description-table">
         <tr>
-          <td class="product-of-week__property">
+          <td class="product-of-week__cell">
             Цвет:
           </td>
-          <td class="product-of-week__value">
+          <td class="product-of-week__cell product-of-week__cell--gap">
             &laquo;Тиффани&raquo;/серый
           </td>
         </tr>
         <tr>
-          <td class="product-of-week__property">
+          <td class="product-of-week__cell">
             Диаметр:
           </td>
-          <td class="product-of-week__value">
+          <td class="product-of-week__cell product-of-week__cell--gap">
             25 см
           </td>
         </tr>
         <tr>
-          <td class="product-of-week__property">
+          <td class="product-of-week__cell">
             Высота:
           </td>
-          <td class="product-of-week__value">
+          <td class="product-of-week__cell product-of-week__cell--gap">
             15 см
           </td>
         </tr>
       </table>
-      <img class="product-of-week__img" src="http://placehold.it/150x100" alt="корзинки" />
+      <img class="product-of-week__img" src="../img/triple-set-mobile@1x.jpg" alt="корзинки" />
       <p class="product-of-week__price">Цена: 990 руб.</p>
-      <a class="product-of-week__order btn" href="#">Заказать</a>
+      <a class="btn" href="#">Заказать</a>
     </section>
     <section class="about-us">
-      <h2 class="about-us__title">Коротко о нас</h2>
-      <ul>
-        <li class="about-us__advantage about-us__advantage--eco">Экологически чистые материалы</li>
-        <li class="about-us__advantage about-us__advantage--style">Скандинавский стиль по российской цене</li>
-        <li class="about-us__advantage about-us__advantage--likes">Увеличивает лайки на фотографиях</li>
-        <li class="about-us__advantage about-us__advantage--hand-made">Связано вручную с любовью и умилением</li>
-        <li class="about-us__advantage about-us__advantage--russia">Поддержка отечественного производителя</li>
-        <li class="about-us__advantage about-us__advantage--present">Поставляется в подарочной упаковке</li>
+      <h2 class="about-us__title">Коротко о нас:</h2>
+      <ul class="about-us__list">
+        <li class="about-us__feature about-us__feature--eco">Экологически чистые материалы</li>
+        <li class="about-us__feature about-us__feature--style">Скандинавский стиль по российской цене</li>
+        <li class="about-us__feature about-us__feature--likes">Увеличивает лайки на фотографиях</li>
+        <li class="about-us__feature about-us__feature--hand-made">Связано вручную с любовью и умилением</li>
+        <li class="about-us__feature about-us__feature--russia">Поддержка отечественного производителя</li>
+        <li class="about-us__feature about-us__feature--present">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
     <section class="reviews">
@@ -79,11 +84,13 @@
         <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
         </p>
         <cite class="reviews__author-name">Анастасия Красильникова</cite>
-        <cite class="reviews__author-nickname">@misssssiskras</cite>
-        <button class="reviews__prev btn" type="button">&larr;</button>
-        <button class="reviews__next btn" type="button">&rarr;</button>
+        <p class="reviews__author-nickname">@misssssiskras</p>
       </blockquote>
-      <a class="reviews__write  btn" href="#">Написать</a>
+      <div class="reviews__toggle">
+        <a class="reviews__arrow" href="#"><img src="../img/icon-left-arrow.svg" width="90" height="25" alt="назад"/></a>
+        <a class="reviews__arrow" href="#"><img src="../img/icon-right-arrow.svg" width="90" height="25" alt="вперёд"/></a>
+      </div>
+      <a class="btn" href="#">Написать</a>
     </section>
     <article class="contacts">
       <h3 class="contacts__title">Контакты</h3>
@@ -95,11 +102,11 @@
       </dl>
       <div class="map">Карта
       </div>
-      <a class="contacts__write-to-us btn" href="#">Напишите нам</a>
+      <a class="btn" href="#">Напишите нам</a>
     </article>
     <footer class="page-footer">
       <article class="social">
-        <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">instagram</a>
+        <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy">instagram</a>
         <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">facebook</a>
         <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru">twitter</a>
       </article>

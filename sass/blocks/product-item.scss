@@ -1,0 +1,23 @@
+.product-item{
+  width: 260px;
+  border: 1px solid lightgrey;
+}
+.product-item__img{
+  margin-top: 0;
+}
+.product-item__name{
+  margin-left: 30px;
+}
+.product-item__description{
+  width: 200px;
+  margin-left: 30px;
+  padding-bottom: 20px;
+  color: grey;
+  border-bottom: 1px solid lightgrey;
+}
+.product-item__price{
+  width: 200px;
+  padding: 20px 0;
+  margin-left: 30px;
+  background: url("../img/icon-cart.svg") no-repeat 100% 50%;
+}

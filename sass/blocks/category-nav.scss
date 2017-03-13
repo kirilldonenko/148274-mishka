@@ -1,4 +1,23 @@
-/*category-nav__slogan
-category-nav__item
-category-nav__item--active
-*/
+.category-nav {
+
+}
+.category-nav__wrap-h2 {
+  width: 250px;
+  height: 250px;
+  background: url("../img/hero-mobile@1x.jpg") 50% 50%;
+  padding: 50px;
+  border-top: 1px solid lightgrey;
+}
+.category-nav__slogan {
+
+}
+.category-nav__wrap {
+  width: 250px;
+  height: 30px;
+  padding: 30px;
+  background-color: green;
+  border: 1px solid darkgreen;
+}
+.category-nav__item {
+  color: white;
+}

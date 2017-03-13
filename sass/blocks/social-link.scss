@@ -1,4 +1,16 @@
-/*social-link--in
-social-link--fb
-social-link--tw
-*/
+.social-link{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+}
+.social-link--insta{
+
+  background: url("../img/icon-insta.svg") no-repeat 50% 50%;
+}
+.social-link--fb{
+  background: url("../img/icon-fb.svg") no-repeat 50% 50%;
+}
+.social-link--tw{
+  background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
+}

@@ -8,7 +8,6 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        Mishka
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">Меню</button>
@@ -20,23 +19,25 @@
       </nav>
     </header>
     <article class="catalog">
-      <h1 class="catalog__title">Каталог товаров</h1>
+      <div class="catalog__wrap-title">
+        <h1 class="catalog__title">Каталог товаров</h1>
+      </div>
       <figure class="product-item">
-        <p><img class="product-item__img" src="http://placehold.it/150x100" /></p>
+        <p class="product-item__img"><img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" /></p>
         <h3 class="product-item__name">Зайчик-попрыгайчик</h3>
         <figcaption class="product-item__description">
           Рост 30 см, вес 200 г</figcaption>
         <div class="product-item__price">1200 руб.</div>
       </figure>
       <figure class="product-item">
-        <p><img class="product-item__img" src="http://placehold.it/150x100" /></p>
+        <p class="product-item__img"><img src="img/photo-2-mobile@1x.jpg" /></p>
         <h3 class="product-item__name">Корзинка для белья</h3>
         <figcaption class="product-item__description">
           Диаметр 15 см, высота 10 см</figcaption>
         <div class="product-item__price">690 руб.</div>
       </figure>
       <figure class="product-item">
-        <p><img class="product-item__img" src="http://placehold.it/150x100" /></p>
+        <p class="product-item__img"><img src="img/photo-3-mobile@1x.jpg" /></p>
         <h3 class="product-item__name">Большая корзинка для игрушек</h3>
         <figcaption class="product-item__description">
           Диаметр 30 см, высота 30 см</figcaption>
@@ -45,7 +46,8 @@
     </article>
     <section class="production-process">
       <h3 class="production-process__title">Процесс производства</h3>
-        <video width="200" height="100" controls="controls">
+        <video class="production-process__video" poster="../img/video-mobile@1x.jpg"
+>
           <source src="#" />
         </video>
       </div>

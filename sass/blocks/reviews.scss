@@ -1,9 +1,33 @@
-/*reviews__title
-reviews__item
-reviews__text
-reviews__author-name
-reviews__author-nickname
-reviews__prev
-reviews__next
-reviews__write
-*/
+.review{
+  border-bottom: 2px solid lightgrey;
+}
+.reviews__title{
+  margin-left: 30px;
+}
+.reviews__text{
+  width: 250px;
+  margin-left: -10px;
+  font-size: 18px;
+}
+.reviews__author-name{
+  margin-left: -10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.reviews__author-nickname{
+  margin-left: -10px;
+  font-size: 18px;
+}
+.reviews__toggle{
+  margin-left: 30px;
+  width: 252px;
+  border: 1px solid lightgrey;
+  margin-bottom: 30px;
+}
+.reviews__arrow{
+  display: inline-block;
+  box-sizing: content-box;
+  width: 82px;
+  padding: 5px 20px;
+  border: 1px solid grey;
+}

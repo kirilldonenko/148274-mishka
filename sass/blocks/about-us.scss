@@ -1,14 +1,46 @@
-/*about-us__title
-about-us__advantage
-about-us__advantage--eco
-about-us__advantage
-about-us__advantage--style
-about-us__advantage
-about-us__advantage--likes
-about-us__advantage
-about-us__advantage--hand-made
-about-us__advantage
-about-us__advantage--russia
-about-us__advantage
-about-us__advantage--present
-*/
+.about-us__title{
+  margin-left: 30px;
+}
+.about-us__list {
+  margin-left: 30px;
+  list-style: none;
+}
+.about-us__feature{
+
+  height: 100px;
+  margin-left: -40px;
+  padding-top: 50px;
+  font-size: 20px;
+
+}
+
+
+
+.about-us__feature--eco{
+  width: 185px;
+  background: url("../img/icon-feature-1.svg") no-repeat 10px 0px;
+}
+.about-us__feature--style{
+  width: 185px;
+  background: url("../img/icon-feature-2.svg") no-repeat 10px 0px;
+}
+
+.about-us__feature--likes{
+  width: 185px;
+  background: url("../img/icon-feature-3.svg") no-repeat 10px 0px;
+}
+
+.about-us__feature--hand-made{
+  width: 200px;
+  background: url("../img/icon-feature-4.svg") no-repeat 10px 0px;
+}
+
+.about-us__feature--russia{
+  width: 240px;
+  background: url("../img/icon-feature-5.svg") no-repeat 10px 0px;
+}
+
+.about-us__feature--present{
+  width: 185px;
+  background: url("../img/icon-feature-6.svg") no-repeat 10px 0px;
+}
