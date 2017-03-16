@@ -3,16 +3,19 @@
 @import "mixins";
 @import "colors";
 @import "blocks/about-us";
+@import "blocks/btn-submit";
 @import "blocks/btn";
 @import "blocks/catalog";
 @import "blocks/category-nav";
 @import "blocks/contacts-data";
 @import "blocks/contacts";
 @import "blocks/copyright";
+@import "blocks/form-cart";
 @import "blocks/form-order";
 @import "blocks/form";
 @import "blocks/main-nav";
 @import "blocks/map";
+@import "blocks/modal";
 @import "blocks/page-footer";
 @import "blocks/page-header";
 @import "blocks/page";
@@ -20,5 +23,6 @@
 @import "blocks/product-of-week";
 @import "blocks/production-process";
 @import "blocks/reviews";
+@import "blocks/size-btn";
 @import "blocks/social-link";
 @import "blocks/social";

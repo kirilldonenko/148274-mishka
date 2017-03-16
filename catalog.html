@@ -8,14 +8,15 @@
   <body class="page">
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="../img/logo-mobile.svg" alt="Mishka">
+        <img src="../img/logo-mobile.svg" width="90" height="40" alt="Mishka">
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Меню</button>
+        <button class="main-nav__toggle" type="button"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--active"><a href="#">Главная</a></li>
-          <li class="main-nav__item"><a href="#">Каталог</a></li>
-          <li class="main-nav__item"><a href="#">Заказать</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="#">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--search"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
         </ul>
       </nav>
     </header>
@@ -30,6 +31,18 @@
           Рост 30 см, вес 200 г</figcaption>
         <div class="product-item__price">1200 руб.</div>
       </figure>
+      <section class="modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="form-cart" action="index.html" method="post">
+          <input class="size-btn" type="button" name="size" value="S">
+          <input class="size-btn" type="button" name="size" value="M">
+          <input class="size-btn" type="button" name="size" value="L">
+          <input class="btn-submit"type="submit" name="submit" value="Добавить">
+
+        </form>
+
+      </section>
       <figure class="product-item">
         <p class="product-item__img"><img src="img/photo-2-mobile@1x.jpg" /></p>
         <h3 class="product-item__name">Корзинка для белья</h3>
@@ -59,7 +72,7 @@
     </section>
     <footer class="page-footer">
       <article class="social">
-        <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">instagram</a>
+        <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy">instagram</a>
         <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">facebook</a>
         <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru">twitter</a>
       </article>

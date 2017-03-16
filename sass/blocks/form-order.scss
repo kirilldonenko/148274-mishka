@@ -6,25 +6,19 @@
   color: green;
 }
 .form-order__input{
-
-
 }
-
 .form-order__label{
-
-
 }
 .form-order__input-text{
   border-style: none;
   border-bottom: 2px solid black;
+  &--tel{
+    background: url("../img/icon-phone.svg") no-repeat 100% 0;
+  }
+  &--email{
+    background: url("../img/icon-mail.svg") no-repeat 100% 0;
+  }
 }
 .form-order__label-text{
   display: block;
-
-}
-.form-order__input-text--tel{
-  background: url("../img/icon-phone.svg") no-repeat 100% 0;
-}
-.form-order__input-text--email{
-  background: url("../img/icon-mail.svg") no-repeat 100% 0;
 }

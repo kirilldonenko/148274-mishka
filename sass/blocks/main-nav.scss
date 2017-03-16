@@ -1,7 +1,32 @@
-/*main-nav--closed
-main-nav--nojs
-main-nav__toggle
-main-nav__list
-main-nav__item
-main-nav__item--active
-*/
+.main-nav{
+
+}
+.main-nav__toggle{
+  width: 22px;
+  height: 22px;
+  background: url("../img/icon-menu-close.svg") no-repeat 50% 50%;
+  border-style: none;
+}
+.main-nav__list{
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+  list-style: none;
+}
+.main-nav__item{
+  padding: 30px 75px;
+  border-bottom: 1px solid #ececec;
+  &--search{
+    background: url("../img/icon-search.svg") no-repeat 10% 50%;
+  }
+  &--cart{
+    background: url("../img/icon-cart.svg") no-repeat 10% 50%;
+  }
+}
+.main-nav__link{
+  text-decoration: none;
+  color:black;
+  font-family: $font;
+  font-size: 16px;
+}
