@@ -1,19 +1,23 @@
 .product-item{
   width: 260px;
-  border: 1px solid lightgrey;
+  margin: 30px auto;
+  border: 1px solid #ececec;
+  font-family: $font;
 }
 .product-item__img{
   margin-top: 0;
 }
 .product-item__name{
+  width: 200px;
   margin-left: 30px;
 }
 .product-item__description{
   width: 200px;
   margin-left: 30px;
   padding-bottom: 20px;
-  color: grey;
-  border-bottom: 1px solid lightgrey;
+  color: #a8a8a8;
+  border-bottom: 1px solid #ececec;
+  font-size: 14px;
 }
 .product-item__price{
   width: 200px;

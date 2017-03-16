@@ -22,7 +22,7 @@
     </header>
     <article class="catalog">
       <div class="catalog__wrap-title">
-        <h1 class="catalog__title">Каталог товаров</h1>
+        <h2 class="catalog__title">Каталог товаров</h2>
       </div>
       <figure class="product-item">
         <p class="product-item__img"><img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" /></p>
@@ -35,10 +35,10 @@
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__text">Выберите размер:</p>
         <form class="form-cart" action="index.html" method="post">
-          <input class="size-btn" type="button" name="size" value="S">
-          <input class="size-btn" type="button" name="size" value="M">
-          <input class="size-btn" type="button" name="size" value="L">
-          <input class="btn-submit"type="submit" name="submit" value="Добавить">
+          <input class="form-cart__size-btn form-cart__size-btn--active" type="button" name="size" value="S">
+          <input class="form-cart__size-btn" type="button" name="size" value="M">
+          <input class="form-cart__size-btn" type="button" name="size" value="L">
+          <input class="form-cart__btn-submit" type="submit" name="submit" value="Добавить">
 
         </form>
 
@@ -60,8 +60,7 @@
     </article>
     <section class="production-process">
       <h3 class="production-process__title">Процесс производства</h3>
-        <video class="production-process__video" poster="../img/video-mobile@1x.jpg"
->
+        <video class="production-process__video">
           <source src="#" />
         </video>
       </div>

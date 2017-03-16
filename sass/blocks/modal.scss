@@ -1,8 +1,6 @@
 .modal{
   width: 320px;
-  padding-left: 30px;
   font-family: $font;
-  border: 1px solid red;
 }
 .modal__title{
   width: 140px;
@@ -10,5 +8,7 @@
   text-transform: uppercase;
 }
 .modal__text{
-    margin: 30px auto;
+  width: 150px;
+  margin: 30px auto;
+  font-size: 16px;
 }
