@@ -1,23 +1,23 @@
 .contacts-data{
-
+  width: 260px;
 }
 .contacts-data__e-mail{
   display: inline-block;
-  width: 75px;
+  width: 80px;
   margin-left: 30px;
   font-family: $font;
   font-size: 14px;
 }
 .contacts-data__e-mail-link{
-
   display: inline-block;
+  width:185px;
   margin-bottom: 40px;
   font-family: $font;
   font-size: 14px;
 }
 .contacts-data__adds{
   display: inline-block;
-  width: 75px;
+  width: 80px;
   vertical-align: top;
   margin-left: 30px;
   font-family: $font;

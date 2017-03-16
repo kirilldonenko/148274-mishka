@@ -33,8 +33,15 @@
 }
 .reviews__arrow{
   display: inline-block;
+  width: 130px;
+  height: 30px;
   box-sizing: content-box;
   width: 88px;
   padding: 10px 20px;
-
+  &--prev{
+    background: url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
+  }
+  &--next{
+    background: url("../img/icon-right-arrow.svg") no-repeat 50% 50%;
+  }
 }
