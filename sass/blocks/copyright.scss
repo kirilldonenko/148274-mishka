@@ -1,14 +1,15 @@
 .copyright{
   margin: 25px 70px;
-  margin-top: 15px;
+
 }
 .copyright__link{
-  width: 135px;
+  width: 185px;
   height: 35px;
   display: inline-block;
   font-size: 18px;
   text-decoration:none;
   color: black;
-  padding-top: 5px;
+  font-family: $font;
+
   background: url("../img/logo-htmlacademy.svg") no-repeat 100% 0;
 }

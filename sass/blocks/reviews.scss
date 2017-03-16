@@ -1,33 +1,40 @@
 .review{
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 2px solid #f1f1f1;
 }
 .reviews__title{
   margin-left: 30px;
+  font-family: $font;
 }
 .reviews__text{
-  width: 250px;
+  width: 260px;
   margin-left: -10px;
-  font-size: 18px;
+  color: #696969;
+  font-family: $font;
+  font-size: 16px;
+  line-height: 200%;
 }
 .reviews__author-name{
   margin-left: -10px;
-  font-size: 22px;
+  font-family: $font;
+  font-size: 16px;
   font-weight: bold;
+  font-style: normal;
 }
 .reviews__author-nickname{
   margin-left: -10px;
-  font-size: 18px;
+  font-family: $font;
+  font-size: 16px;
 }
 .reviews__toggle{
   margin-left: 30px;
-  width: 252px;
-  border: 1px solid lightgrey;
+  width: 260px;
+  border: 1px solid #ececec;
   margin-bottom: 30px;
 }
 .reviews__arrow{
   display: inline-block;
   box-sizing: content-box;
-  width: 82px;
-  padding: 5px 20px;
-  border: 1px solid grey;
+  width: 88px;
+  padding: 10px 20px;
+
 }
