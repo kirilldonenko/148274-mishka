@@ -1,0 +1,15 @@
+.social-link{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+  &--insta{
+    background: url("../img/icon-insta.svg") no-repeat 50% 50%;
+  }
+  &--fb{
+    background: url("../img/icon-fb.svg") no-repeat 50% 50%;
+  }
+  &--tw{
+    background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
+  }
+}

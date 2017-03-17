@@ -1,0 +1,54 @@
+.product-of-week {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #f1f1f1;
+}
+.product-of-week__product-name {
+  margin-left: 30px;
+  font-family: $font;
+}
+.product-of-week__headline {
+  margin-left: 30px;
+  margin-top: -20px;
+  font-family: $font;
+  font-size: 16px;
+  color:$color-base;
+  text-transform: uppercase;
+}
+.product-of-week__description{
+  width: 250px;
+  margin-left: 30px;
+  font-family: $font;
+  font-size: 16px;
+}
+.product-of-week__description-table {
+  margin-left: 30px;
+  border-collapse: collapse;
+  width: 260px;
+  font-family: $font;
+
+}
+.product-of-week__cell {
+  padding: 10px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #ececec;
+}
+.product-of-week__cell--gap {
+  padding-left: 30px;
+}
+.product-of-week__img {
+  width: 260px;
+  height: 300px;
+  margin-top: 30px;
+  margin-left: 30px;
+
+}
+.product-of-week__price {
+  width: 260px;
+  margin-top:  20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  text-align: center;
+  color: #444444;
+  font-family: $font;
+  font-size: 18px;
+}
