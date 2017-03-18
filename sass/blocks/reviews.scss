@@ -4,21 +4,18 @@
 
 .reviews__title {
   margin-left: 30px;
-  font-family: $font;
 }
 
 .reviews__text {
   width: 260px;
   margin-left: -10px;
   color: #696969;
-  font-family: $font;
   font-size: 16px;
   line-height: 200%;
 }
 
 .reviews__author-name {
   margin-left: -10px;
-  font-family: $font;
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
@@ -26,7 +23,6 @@
 
 .reviews__author-nickname {
   margin-left: -10px;
-  font-family: $font;
   font-size: 16px;
 }
 
@@ -42,6 +38,7 @@
   width: 90px;
   height: 30px;
   padding: 10px 20px;
+
   &--prev {
     background: url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
     border-right: 1px solid #ececec;

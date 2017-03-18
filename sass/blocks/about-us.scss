@@ -1,44 +1,45 @@
-.about-us__title{
+.about-us__title {
   margin-left: 30px;
-  font-family: $font;
 }
+
 .about-us__list {
   margin-left: 30px;
   list-style: none;
-  font-family: $font;
 }
-.about-us__feature{
+
+.about-us__feature {
   height: 100px;
   margin-left: -40px;
   padding-top: 50px;
   font-size: 16px;
-  &--eco{
+
+  &--eco {
     width: 185px;
     background: url("../img/icon-feature-1.svg") no-repeat 10px 0;
   }
-  &--style{
+
+  &--style {
     width: 185px;
     background: url("../img/icon-feature-2.svg") no-repeat 10px 0;
   }
 
-  &--likes{
+  &--likes {
     width: 185px;
-    background: url("../img/icon-feature-3.svg") no-repeat 10px 0px;
+    background: url("../img/icon-feature-3.svg") no-repeat 10px 0;
   }
 
-  &--hand-made{
+  &--hand-made {
     width: 200px;
-    background: url("../img/icon-feature-4.svg") no-repeat 10px 0px;
+    background: url("../img/icon-feature-4.svg") no-repeat 10px 0;
   }
 
-  &--russia{
+  &--russia {
     width: 240px;
-    background: url("../img/icon-feature-5.svg") no-repeat 10px 0px;
+    background: url("../img/icon-feature-5.svg") no-repeat 10px 0;
   }
 
-  &--present{
+  &--present {
     width: 185px;
-    background: url("../img/icon-feature-6.svg") no-repeat 10px 0px;
+    background: url("../img/icon-feature-6.svg") no-repeat 10px 0;
   }
-
 }

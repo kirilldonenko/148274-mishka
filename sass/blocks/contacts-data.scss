@@ -1,34 +1,34 @@
-.contacts-data{
+.contacts-data {
   width: 100px;
 }
-.contacts-data__e-mail{
+
+.contacts-data__e-mail {
   display: inline-block;
   width: 80px;
   margin-left: 30px;
-  font-family: $font;
   font-size: 14px;
 }
-.contacts-data__e-mail-link{
+
+.contacts-data__e-mail-link {
   display: inline-block;
-  width:185px;
+  width: 185px;
   margin-bottom: 40px;
-  font-family: $font;
   font-size: 14px;
 }
-.contacts-data__adds{
+
+.contacts-data__adds {
   display: inline-block;
   width: 80px;
   vertical-align: top;
   margin-left: 30px;
-  font-family: $font;
   font-size: 14px;
 }
-.contacts-data__address{
+
+.contacts-data__address {
   display: inline-block;
   width: 150px;
   margin-bottom: 40px;
   margin-top: -5px;
-  font-family: $font;
   font-size: 14px;
   line-height: 200%;
 }

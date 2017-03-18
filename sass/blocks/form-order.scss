@@ -1,33 +1,38 @@
-.form-order{
+.form-order {
   margin-left: 30px;
-  font-family: $font;
 }
-.form-order__headline{
+
+.form-order__headline {
   text-transform: uppercase;
   color: $color-base;
   font-size: 16px;
 }
-.form-order__input{
-}
-.form-order__label{
-}
-.form-order__input-text{
+
+.form-order__input {}
+
+.form-order__label {}
+
+.form-order__input-text {
   display: inline-block;
   width: 260px;
   padding: 20px 0;
   border-style: none;
   border-bottom: 2px solid black;
-  &--tel{
+
+  &--tel {
     background: url("../img/icon-phone.svg") no-repeat 95% 50%;
   }
-  &--email{
+
+  &--email {
     background: url("../img/icon-mail.svg") no-repeat 95% 50%;
   }
 }
-.form-order__label-text{
+
+.form-order__label-text {
   display: block;
 }
-.form-order__submit{
+
+.form-order__submit {
   margin-left: 0;
   background-color: #ffffff;
 }
