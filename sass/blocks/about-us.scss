@@ -1,15 +1,43 @@
+.about-us{
+  width: 260px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid green;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    width: 668px;
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
+}
 .about-us__title {
-  margin-left: 30px;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    font-size: 40px;
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
 }
 
 .about-us__list {
-  margin-left: 30px;
   list-style: none;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 420px;
+    width: 668px;
+    padding: 0;
+    font-size: 28px;
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
 }
 
 .about-us__feature {
-  height: 100px;
-  margin-left: -40px;
+  margin-bottom: 40px;
   padding-top: 50px;
   font-size: 16px;
 
@@ -20,22 +48,24 @@
 
   &--style {
     width: 185px;
-    background: url("../img/icon-feature-2.svg") no-repeat 10px 0;
+    background: url("../img/icon-feature-3.svg") no-repeat 10px 0;
   }
 
   &--likes {
     width: 185px;
-    background: url("../img/icon-feature-3.svg") no-repeat 10px 0;
+    background: url("../img/icon-feature-5.svg") no-repeat 10px 0;
+
   }
 
   &--hand-made {
     width: 200px;
-    background: url("../img/icon-feature-4.svg") no-repeat 10px 0;
+    background: url("../img/icon-feature-2.svg") no-repeat 10px 0;
+
   }
 
   &--russia {
     width: 240px;
-    background: url("../img/icon-feature-5.svg") no-repeat 10px 0;
+  background: url("../img/icon-feature-4.svg") no-repeat 10px 0;
   }
 
   &--present {

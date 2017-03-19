@@ -1,4 +1,6 @@
-.main-nav {}
+.main-nav {
+
+}
 
 .main-nav__toggle {
   width: 22px;
@@ -8,24 +10,61 @@
 }
 
 .main-nav__list {
-  width: 320px;
+  width: 260px;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  border: 1px solid green;
   list-style: none;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    display: flex;
+    flex-direction: row;
+    width: 668px;
+
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
 }
 
 .main-nav__item {
-  padding: 30px 75px;
+  padding: 25px 50px;
   border-bottom: 1px solid #ececec;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    width: 170px;
+    margin-left: -20px;
+    padding: 25px 0;
+    &:nth-of-type(3) {
+      position: relative;
+      top: -80px;
+      right: -70px;
+      padding-left: 50px;
+      background-position: 15% 50%;
+      border-left: 1px solid #ececec;
+      z-index: 0;
+    }
+    &:nth-of-type(4) {
+      width: 170px;
+      background-color: #afffff;/*#ffffff;*/
+      position: relative;
+      padding-left: 65px;
+      top: -80px;
+      right: 50px;
+      background-position: 15% 50%;
+      border-left: 1px solid #ececec;
+      z-index: 0;
+    }
+  }
+  @media (min-width: #{$desktop}) {
 
+  }
   &--search {
-    background: url("../img/icon-search.svg") no-repeat 10% 50%;
+    background: url("../img/icon-search.svg") no-repeat 0% 50%;
   }
 
   &--cart {
-    background: url("../img/icon-cart.svg") no-repeat 10% 50%;
+    background: url("../img/icon-cart.svg") no-repeat 0% 50%;
   }
+
 }
 
 .main-nav__link {

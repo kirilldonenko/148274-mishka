@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+  <div class="container">
     <header class="page-header">
       <div class="page-header__logo">
         <a href="Главная"><img src="./img/logo-mobile.svg" width="90" height="40" alt="Mishka"></a>
@@ -39,9 +43,7 @@
           <input class="form-cart__size-btn" type="button" name="size" value="M">
           <input class="form-cart__size-btn" type="button" name="size" value="L">
           <input class="form-cart__btn-submit" type="submit" name="submit" value="Добавить">
-
         </form>
-
       </section>
       <figure class="product-item">
         <p class="product-item__img"><img src="img/photo-2-mobile@1x.jpg" /></p>
@@ -60,10 +62,9 @@
     </article>
     <section class="production-process">
       <h3 class="production-process__title">Процесс производства</h3>
-        <video class="production-process__video">
-          <source src="#" />
-        </video>
-      </div>
+      <video class="production-process__video">
+            <source src="#" />
+          </video>
       <p class="production-process__text">
         По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
       </p>
@@ -79,5 +80,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru">Разработано</a>
       </article>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>

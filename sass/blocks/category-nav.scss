@@ -1,18 +1,13 @@
 .category-nav {
   width: 320px;
-  background: url("../img/hero-mobile@1x.jpg")no-repeat 50% 0;
-  border: 1px solid #ececec;
-}
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    display: flex;
+    justify-content: center;
 
-.category-nav__wrap-h2 {
-  text-align: center;
-}
+  }
+  @media (min-width: #{$desktop}) {
 
-.category-nav__slogan {
-  width: 250px;
-  margin: 95px auto 125px;
-  font-size: 26px;
-  line-height: 100%;
+  }
 }
 
 .category-nav__list {
@@ -21,11 +16,27 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    display: flex;
+    flex-direction: row;
+    width: 668px;
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
 }
 
 .category-nav__item {
   padding: 30px;
   font-size: 16px;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    width: 330px;
+    font-size: 22px;
+
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
 
   &--interior {
     background: url("../img/icon-interior.svg") no-repeat 87% 50% $color-base;
@@ -39,4 +50,12 @@
 .category-nav__link {
   text-decoration: none;
   color: white;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    display: block;
+    width: 150px;
+
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
 }
