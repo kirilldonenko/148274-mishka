@@ -1,7 +1,36 @@
 .contacts{
   width: 320px;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    width: 768px;
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
 }
 .contacts__title{
   margin-left: 30px;
   margin-bottom: 40px;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    width: 668px;
+    padding: 20px 0px;
+    font-size: 42px;
+    background: url("../img/icon-flag.svg") no-repeat 100% 50%;
+
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
+
+}
+.contacts__write-to-us{
+  margin-left: 30px;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    margin-left: 0;
+    justify-content: center;
+    align-self: center;
+
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
 }

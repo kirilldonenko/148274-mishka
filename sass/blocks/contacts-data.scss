@@ -1,5 +1,15 @@
 .contacts-data {
-  width: 100px;
+  width: 320px;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
 }
 
 .contacts-data__e-mail {
