@@ -1,16 +1,49 @@
 .form-order {
-  margin-left: 30px;
+  width: 260px;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    width: 668px;
+
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
 }
 
 .form-order__headline {
   text-transform: uppercase;
   color: $color-base;
   font-size: 16px;
+
 }
+.form-order__wrap-block{
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 
-.form-order__input {}
+  }
+  @media (min-width: #{$desktop}) {
 
-.form-order__label {}
+  }
+}
+.form-order__wrap-input{
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
+}
+.form-order__input{
+
+}
+.form-order__label {
+
+}
 
 .form-order__input-text {
   display: inline-block;

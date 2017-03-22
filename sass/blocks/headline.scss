@@ -1,0 +1,27 @@
+.headline {
+  background: url("../img/hero-mobile@1x.jpg")no-repeat 50% 0;
+  border: 1px solid #ececec;
+  text-align: center;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    width: 668px;
+    margin-top: -50px;
+    background-position: 50% 50%;
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
+}
+
+.headline__text {
+  width: 250px;
+  margin: 95px auto 125px;
+  font-size: 26px;
+  line-height: 100%;
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    width: 500px;
+    font-size: 42px;
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
+}
