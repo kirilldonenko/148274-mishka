@@ -2,7 +2,6 @@
   width: 260px;
   @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
     width: 668px;
-
   }
   @media (min-width: #{$desktop}) {
 
@@ -13,25 +12,52 @@
   text-transform: uppercase;
   color: $color-base;
   font-size: 16px;
-
-}
-.form-order__wrap-block{
   @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
+    width: 170px;
   }
   @media (min-width: #{$desktop}) {
 
   }
 }
-.form-order__wrap-input{
+.form-order__wrap-block{
   @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  @media (min-width: #{$desktop}) {
 
+  }
+}
+.form-order__wrap-type{
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
+}
+.form-order__wrap-color{
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  @media (min-width: #{$desktop}) {
+
+  }
+}
+.form-order__wrap-bio{
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: flex-start;
   }
   @media (min-width: #{$desktop}) {
