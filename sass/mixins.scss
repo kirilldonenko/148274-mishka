@@ -1,8 +1,8 @@
 @mixin container {
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     width: 768px;
   }
-  @media (min-width: #{$desktop}) {
+  @media ($desktop-min) {
     width: 1050px;
   }
 }

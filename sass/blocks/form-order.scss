@@ -1,10 +1,7 @@
 .form-order {
   width: 260px;
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     width: 668px;
-  }
-  @media (min-width: #{$desktop}) {
-
   }
 }
 
@@ -12,22 +9,16 @@
   text-transform: uppercase;
   color: $color-base;
   font-size: 16px;
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     width: 170px;
-  }
-  @media (min-width: #{$desktop}) {
-
   }
 }
 .form-order__wrap-block{
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     width: 400px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    &:nth-child(5 - n){
-
-    }
     &--edges{
       width: 668px;
       justify-content: space-between;
@@ -39,50 +30,35 @@
       align-items: center;
     }
   }
-  @media (min-width: #{$desktop}) {
-
-  }
 }
 .form-order__wrap-type{
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  @media (min-width: #{$desktop}) {
-
-  }
 }
 .form-order__wrap-color{
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     width: 250px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
   }
-  @media (min-width: #{$desktop}) {
-
-  }
 }
 .form-order__wrap-bio{
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     width: 500px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
   }
-  @media (min-width: #{$desktop}) {
-
-  }
 }
 .form-order__wrap-communications{
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     width: 500px;
-  }
-  @media (min-width: #{$desktop}) {
-
   }
 }
 .form-order__input{
@@ -106,11 +82,8 @@
   &--email {
     background: url("../img/icon-mail.svg") no-repeat 95% 50%;
   }
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     width: 390px;
-  }
-  @media (min-width: #{$desktop}) {
-
   }
 }
 

@@ -1,20 +1,16 @@
 .reviews {
   width: 260px;
   border-bottom: 2px solid #f1f1f1;
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 768px;
     background: url("../img/review@1x.jpg") no-repeat;
-
-  }
-  @media (min-width: #{$desktop}) {
-
   }
 }
 .reviews__wrap{
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     width: 668px;
     height: 350px;
     display: flex;
@@ -22,9 +18,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     border: 1px solid red;
-  }
-  @media (min-width: #{$desktop}) {
-
   }
 }
 .reviews__title {
@@ -38,11 +31,8 @@
   color: #696969;
   font-size: 16px;
   line-height: 200%;
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
   width: 668px;
-
-  }
-  @media (min-width: #{$desktop}) {
 
   }
 }
@@ -62,12 +52,9 @@
   width: 260px;
   border: 1px solid #ececec;
   margin-bottom: 30px;
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     margin-left: -260px;
     order: 5;
-  }
-  @media (min-width: #{$desktop}) {
-
   }
 }
 
@@ -86,12 +73,9 @@
   }
 }
 .reviews__write{
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     margin: 0;
     margin-left: -260px;
-
   }
-  @media (min-width: #{$desktop}) {
 
-  }
 }

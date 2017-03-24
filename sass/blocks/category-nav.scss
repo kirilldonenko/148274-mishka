@@ -1,43 +1,30 @@
 .category-nav {
   width: 320px;
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     display: flex;
     justify-content: center;
-
-  }
-  @media (min-width: #{$desktop}) {
-
   }
 }
-
 .category-nav__list {
   width: 320px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     display: flex;
     flex-direction: row;
     width: 668px;
-  }
-  @media (min-width: #{$desktop}) {
-
   }
 }
 
 .category-nav__item {
   padding: 30px;
   font-size: 16px;
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     width: 330px;
     font-size: 22px;
-
   }
-  @media (min-width: #{$desktop}) {
-
-  }
-
   &--interior {
     background: url("../img/icon-interior.svg") no-repeat 87% 50% $color-base;
   }
@@ -50,12 +37,8 @@
 .category-nav__link {
   text-decoration: none;
   color: white;
-  @media (min-width: #{$tablet}) and (max-width: #{$desktop}) {
+  @media ($tablet) and ($desktop-max) {
     display: block;
     width: 150px;
-
-  }
-  @media (min-width: #{$desktop}) {
-
   }
 }

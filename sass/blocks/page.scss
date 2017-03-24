@@ -6,6 +6,6 @@
   align-items: center;
   font-family: $font, Arial, sans-serif;
   background-color: #ffffff;
-  border: 1px solid green;
   @include container;
+  outline: 1px solid blue;
 }
