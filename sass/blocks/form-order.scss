@@ -10,15 +10,16 @@
   color: $color-base;
   font-size: 16px;
   @media ($tablet) and ($desktop-max) {
-    width: 170px;
+    width: 165px;
   }
 }
 .form-order__wrap-block{
   @media ($tablet) and ($desktop-max) {
-    width: 400px;
+    width: 600px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-bottom: 70px;
     &--edges{
       width: 668px;
       justify-content: space-between;
@@ -36,15 +37,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    outline: 1px solid red;
   }
 }
 .form-order__wrap-color{
   @media ($tablet) and ($desktop-max) {
-    width: 250px;
+    width: 500px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
+    outline: 1px solid red;
   }
 }
 .form-order__wrap-bio{
@@ -54,6 +57,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    & > input{
+      margin-bottom: 20px;
+    }
   }
 }
 .form-order__wrap-communications{
@@ -61,11 +67,14 @@
     width: 500px;
   }
 }
-.form-order__input{
-
-}
 .form-order__label {
-
+  @media ($tablet) and ($desktop-max) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &--small-width{
+      width: 220px;
+    }
+  }
 }
 
 .form-order__input-text {
@@ -74,23 +83,34 @@
   padding: 20px 0;
   border-style: none;
   border-bottom: 2px solid black;
-
+  @media ($tablet) and ($desktop-max) {
+    width: 390px;
+    &--big-width{
+      width: 430px;
+    }
+  }
   &--tel {
     background: url("../img/icon-phone.svg") no-repeat 95% 50%;
+    @media ($tablet) and ($desktop-max) {
+      width: 500px;
+      }
   }
 
   &--email {
     background: url("../img/icon-mail.svg") no-repeat 95% 50%;
+    @media ($tablet) and ($desktop-max) {
+      width: 500px;
+      }
   }
+}
+.form-order__textarea{
+  width: 260px;
+  height: 140px;
   @media ($tablet) and ($desktop-max) {
-    width: 390px;
-  }
+    width: 500px;
+    height: 140px;
+    }
 }
-
-.form-order__label-text {
-  display: block;
-}
-
 .form-order__submit {
   margin-left: 0;
   background-color: #ffffff;
