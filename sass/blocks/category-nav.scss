@@ -1,8 +1,11 @@
 .category-nav {
   width: 320px;
   @media ($tablet) and ($desktop-max) {
+    width: 768px;
     display: flex;
     justify-content: center;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid black;
   }
 }
 .category-nav__list {

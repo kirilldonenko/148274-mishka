@@ -16,11 +16,9 @@
   }
 }
 .contacts__write-to-us{
-  margin-left: 30px;
+  margin: 30px ;
   @media ($tablet) and ($desktop-max) {
-    margin-left: 0;
-    justify-content: center;
-    align-self: center;
+    margin: 60px auto;
 
   }
 }
