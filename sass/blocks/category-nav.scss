@@ -1,17 +1,18 @@
 .category-nav {
   width: 320px;
-  background: url("../img/hero-mobile@1x.jpg")no-repeat 50% 0;
-  border: 1px solid #ececec;
-}
-.category-nav__wrap-h2 {
-  text-align: center;
-}
-.category-nav__slogan {
-  width:250px;
-  margin: 95px auto 125px;
-  font-family: $font;
-  font-size: 26px;
-  line-height: 100%;
+  @media ($tablet) and ($desktop-max) {
+    width: 768px;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid black;
+  }
+  @media ($desktop-min) {
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
 }
 .category-nav__list {
   width: 320px;
@@ -19,19 +20,43 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  @media ($tablet) and ($desktop-max) {
+    display: flex;
+    flex-direction: row;
+    width: 668px;
+  }
+  @media ($desktop-min) {
+    display: flex;
+    flex-direction: row;
+    width: 1050px;
+  }
 }
+
 .category-nav__item {
   padding: 30px;
-  font-family: $font;
   font-size: 16px;
-  &--interior{
+  @media ($tablet) and ($desktop-max) {
+    width: 330px;
+    font-size: 22px;
+  }
+  @media ($desktop-min) {
+    width: 525px;
+    font-size: 22px;
+  }
+  &--interior {
     background: url("../img/icon-interior.svg") no-repeat 87% 50% $color-base;
   }
-  &--toy{
+
+  &--toy {
     background: url("../img/icon-toy.svg") no-repeat 90% 50% #56c3b2;
   }
 }
-.category-nav__link{
+
+.category-nav__link {
   text-decoration: none;
   color: white;
+  @media ($tablet) and ($desktop-max) {
+    display: block;
+    width: 150px;
+  }
 }

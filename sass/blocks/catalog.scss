@@ -1,12 +1,21 @@
-.catalog__wrap-title{
+.catalog{
+  @media ($tablet) and ($desktop-max) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.catalog__wrap-title {
   width: 320px;
-
   background-color: #f1f1f1;
   border: 1px solid #ececec;
+  @media ($tablet) and ($desktop-max) {
+    width: 768px;
+    border: 1px solid black;
+  }
 }
-.catalog__title{
+
+.catalog__title {
   margin: 70px auto;
   text-align: center;
-  font-family: $font;
-
-  }
+}

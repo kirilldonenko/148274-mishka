@@ -1,0 +1,15 @@
+.contacts-wrap{
+  @media ($tablet) and ($desktop-max) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+  }
+  @media ($desktop-min){
+    width: 870px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+}

@@ -1,83 +1,85 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Catalog</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page">
-    <header class="page-header">
-      <div class="page-header__logo">
-        <img src="../img/logo-mobile.svg" width="90" height="40" alt="Mishka">
-      </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="#">Каталог товаров</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a></li>
-          <li class="main-nav__item main-nav__item--search"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
-        </ul>
-      </nav>
-    </header>
-    <article class="catalog">
-      <div class="catalog__wrap-title">
-        <h2 class="catalog__title">Каталог товаров</h2>
-      </div>
-      <figure class="product-item">
-        <p class="product-item__img"><img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" /></p>
-        <h3 class="product-item__name">Зайчик-попрыгайчик</h3>
-        <figcaption class="product-item__description">
-          Рост 30 см, вес 200 г</figcaption>
-        <div class="product-item__price">1200 руб.</div>
-      </figure>
-      <section class="modal">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__text">Выберите размер:</p>
-        <form class="form-cart" action="index.html" method="post">
-          <input class="form-cart__size-btn form-cart__size-btn--active" type="button" name="size" value="S">
-          <input class="form-cart__size-btn" type="button" name="size" value="M">
-          <input class="form-cart__size-btn" type="button" name="size" value="L">
-          <input class="form-cart__btn-submit" type="submit" name="submit" value="Добавить">
 
-        </form>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-      </section>
-      <figure class="product-item">
-        <p class="product-item__img"><img src="img/photo-2-mobile@1x.jpg" /></p>
-        <h3 class="product-item__name">Корзинка для белья</h3>
-        <figcaption class="product-item__description">
-          Диаметр 15 см, высота 10 см</figcaption>
-        <div class="product-item__price">690 руб.</div>
-      </figure>
-      <figure class="product-item">
-        <p class="product-item__img"><img src="img/photo-3-mobile@1x.jpg" /></p>
-        <h3 class="product-item__name">Большая корзинка для игрушек</h3>
-        <figcaption class="product-item__description">
-          Диаметр 30 см, высота 30 см</figcaption>
-        <div class="product-item__price">1500 руб.</div>
-      </figure>
-    </article>
-    <section class="production-process">
-      <h3 class="production-process__title">Процесс производства</h3>
-        <video class="production-process__video">
-          <source src="#" />
-        </video>
+<body class="page">
+  <header class="page-header">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__logo">
+        <a href="Главная"><img src="./img/logo-mobile.svg" width="90" height="40" alt="Mishka"></a>
       </div>
-      <p class="production-process__text">
-        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-      </p>
-      <a class="production-process__order btn" href="#">Сделать заказ</a>
+      <button class="main-nav__toggle" type="button"></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#"><img class="main-nav__search" src="./img/icon-search.svg" alt="">Поиск по сайту</a></li>
+        <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+      </ul>
+      <p class="main-nav__text">Бесплатная доставка по России</p>
+    </nav>
+  </header>
+  <article class="catalog">
+    <div class="catalog__wrap-title">
+      <h2 class="catalog__title">Каталог товаров</h2>
+    </div>
+    <figure class="product-item">
+      <p class="product-item__img"><img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" /></p>
+      <h3 class="product-item__name">Зайчик-попрыгайчик</h3>
+      <figcaption class="product-item__description">
+        Рост 30 см, вес 200 г</figcaption>
+      <div class="product-item__price">1200 руб.</div>
+    </figure>
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="form-cart" action="index.html" method="post">
+        <input class="form-cart__size-btn form-cart__size-btn--active" type="button" name="size" value="S">
+        <input class="form-cart__size-btn" type="button" name="size" value="M">
+        <input class="form-cart__size-btn" type="button" name="size" value="L">
+        <input class="form-cart__btn-submit" type="submit" name="submit" value="Добавить">
+      </form>
     </section>
-    <footer class="page-footer">
-      <article class="social">
-        <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy">instagram</a>
-        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">facebook</a>
-        <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru">twitter</a>
-      </article>
-      <article class="copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru">Разработано</a>
-      </article>
-    </footer>
-  </body>
+    <figure class="product-item">
+      <p class="product-item__img"><img src="img/photo-2-mobile@1x.jpg" /></p>
+      <h3 class="product-item__name">Корзинка для белья</h3>
+      <figcaption class="product-item__description">
+        Диаметр 15 см, высота 10 см</figcaption>
+      <div class="product-item__price">690 руб.</div>
+    </figure>
+    <figure class="product-item">
+      <p class="product-item__img"><img src="img/photo-3-mobile@1x.jpg" /></p>
+      <h3 class="product-item__name">Большая корзинка для игрушек</h3>
+      <figcaption class="product-item__description">
+        Диаметр 30 см, высота 30 см</figcaption>
+      <div class="product-item__price">1500 руб.</div>
+    </figure>
+  </article>
+  <section class="production-process">
+    <h3 class="production-process__title">Процесс производства</h3>
+    <video class="production-process__video">
+            <source src="#" />
+          </video>
+    <p class="production-process__text">
+      По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+    </p>
+    <a class="production-process__order btn" href="#">Сделать заказ</a>
+  </section>
+  <footer class="page-footer">
+    <article class="social">
+      <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy">instagram</a>
+      <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">facebook</a>
+      <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru">twitter</a>
+    </article>
+    <article class="copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru">Разработано</a>
+    </article>
+  </footer>
+</body>
+
 </html>
