@@ -1,12 +1,14 @@
 .form-cart {
   width: 260px;
   margin: 0 auto;
+  @media ($tablet) and ($desktop-max) {
+    width: 350px;
+  }
 }
 
 .form-cart__size-btn {
   display: inline-block;
   width: 80px;
-  height: 50px;
   margin-right: 3px;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -17,6 +19,10 @@
   color: #5d5d5d;
   background-color: #ffffff;
   border: 2px solid #ececec;
+  @media ($tablet) and ($desktop-max) {
+    width: 110px;
+    margin-right: 10px;
+  }
 
   &--active {
     border-color: #63d1bb;
@@ -26,7 +32,7 @@
 .form-cart__btn-submit {
   display: block;
   width: 260px;
-  margin: 40px 0;
+  margin: 30px 0;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
@@ -36,4 +42,7 @@
   background-color: $color-base;
   color: #ffffff;
   border-style: none;
+  @media ($tablet) and ($desktop-max) {
+    width: 350px;
+  }
 }

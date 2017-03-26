@@ -1,11 +1,18 @@
 .modal {
   width: 320px;
+  @media ($tablet) and ($desktop-max) {
+    width: 558px;
+    height: 338px;
+  }
 }
 
 .modal__title {
   width: 140px;
   margin: 30px auto;
   text-transform: uppercase;
+  @media ($tablet) and ($desktop-max) {
+    width: 355px;
+  }
 }
 
 .modal__text {

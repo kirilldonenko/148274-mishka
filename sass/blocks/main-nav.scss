@@ -5,6 +5,12 @@
   @media ($tablet) and ($desktop-max) {
     width: 768px;
   }
+  @media ($desktop-min) {
+    width: 1050px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 .main-nav__logo {
   display: block;
@@ -17,6 +23,11 @@
     height: 50px;
     margin: 20px 50px;
     align-self: flex-start;
+  }
+  @media ($desktop-min) {
+    width: 160px;
+    height: 75px;
+    order: 2;
   }
 }
 .main-nav__toggle {
