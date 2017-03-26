@@ -7,6 +7,12 @@
     background-color: #f9f9f9;
     border-bottom: 1px solid black;
   }
+  @media ($desktop-min) {
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
 }
 .category-nav__list {
   width: 320px;
@@ -19,6 +25,11 @@
     flex-direction: row;
     width: 668px;
   }
+  @media ($desktop-min) {
+    display: flex;
+    flex-direction: row;
+    width: 1050px;
+  }
 }
 
 .category-nav__item {
@@ -26,6 +37,10 @@
   font-size: 16px;
   @media ($tablet) and ($desktop-max) {
     width: 330px;
+    font-size: 22px;
+  }
+  @media ($desktop-min) {
+    width: 525px;
     font-size: 22px;
   }
   &--interior {

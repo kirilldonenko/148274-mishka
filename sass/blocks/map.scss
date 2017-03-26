@@ -6,4 +6,7 @@
     width: 768px;
 
   }
+  @media ($desktop-min){
+    order: -1;
+  }
 }

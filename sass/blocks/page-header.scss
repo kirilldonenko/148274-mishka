@@ -3,4 +3,7 @@
   @media ($tablet) and ($desktop-max) {
     width: 768px;
   }
+  @media ($desktop-min) {
+    width: 1050px;
+  }
 }
