@@ -15,7 +15,6 @@
 }
 .form-order__wrap-block{
   @media ($tablet) and ($desktop-max) {
-    width: 600px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -66,6 +65,9 @@
   @media ($tablet) and ($desktop-max) {
     width: 500px;
   }
+}
+.form-order__input{
+
 }
 .form-order__label {
   @media ($tablet) and ($desktop-max) {

@@ -11,15 +11,17 @@
 <body class="page">
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <div class="main-nav__logo">
-        <a href="Главная"><img src="./img/logo-mobile.svg" width="90" height="40" alt="Mishka"></a>
-      </div>
       <button class="main-nav__toggle" type="button"></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+        <li class="main-nav__item main-nav__item--logo">
+          <a href="index.html"><img src="./img/logo-mobile.svg" alt="Mishka"></a>
+        </li>
         <li class="main-nav__item"><a class="main-nav__link" href="#"><img class="main-nav__search" src="./img/icon-search.svg" alt="">Поиск по сайту</a></li>
         <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Новые поступления</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Распродажа</a></li>
       </ul>
       <p class="main-nav__text">Бесплатная доставка по России</p>
     </nav>
@@ -29,7 +31,7 @@
       <h2 class="catalog__title">Каталог товаров</h2>
     </div>
     <figure class="product-item">
-      <p class="product-item__img"><img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" /></p>
+      <img class="product-item__img" src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" />
       <h3 class="product-item__name">Зайчик-попрыгайчик</h3>
       <figcaption class="product-item__description">
         Рост 30 см, вес 200 г</figcaption>
@@ -46,14 +48,14 @@
       </form>
     </section>
     <figure class="product-item">
-      <p class="product-item__img"><img src="img/photo-2-mobile@1x.jpg" /></p>
+      <img class="product-item__img" src="img/photo-2-mobile@1x.jpg" />
       <h3 class="product-item__name">Корзинка для белья</h3>
       <figcaption class="product-item__description">
         Диаметр 15 см, высота 10 см</figcaption>
       <div class="product-item__price">690 руб.</div>
     </figure>
     <figure class="product-item">
-      <p class="product-item__img"><img src="img/photo-3-mobile@1x.jpg" /></p>
+      <img class="product-item__img" src="img/photo-3-mobile@1x.jpg" />
       <h3 class="product-item__name">Большая корзинка для игрушек</h3>
       <figcaption class="product-item__description">
         Диаметр 30 см, высота 30 см</figcaption>
@@ -63,8 +65,8 @@
   <section class="production-process">
     <h3 class="production-process__title">Процесс производства</h3>
     <video class="production-process__video">
-            <source src="#" />
-          </video>
+      <source src="#" />
+    </video>
     <p class="production-process__text">
       По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
     </p>

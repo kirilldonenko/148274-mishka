@@ -20,8 +20,10 @@
   background-color: #ffffff;
   border: 2px solid #ececec;
   @media ($tablet) and ($desktop-max) {
-    width: 110px;
-    margin-right: 10px;
+    width: 100px;
+    &:not(form-cart__size-btn:last-of-type){
+      margin-right: 5px;
+    }
   }
 
   &--active {

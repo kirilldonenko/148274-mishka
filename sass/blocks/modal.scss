@@ -12,6 +12,8 @@
   text-transform: uppercase;
   @media ($tablet) and ($desktop-max) {
     width: 355px;
+    text-align: center;
+    font-size: 30px;
   }
 }
 

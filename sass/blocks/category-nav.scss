@@ -2,10 +2,13 @@
   width: 320px;
   @media ($tablet) and ($desktop-max) {
     width: 768px;
+    margin-top: -185px;
     display: flex;
     justify-content: center;
     background-color: #f9f9f9;
     border-bottom: 1px solid black;
+    position: relative;
+    z-index: 5;
   }
   @media ($desktop-min) {
     width: 1150px;

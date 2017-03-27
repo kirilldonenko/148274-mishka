@@ -4,10 +4,13 @@
   text-align: center;
   @media ($tablet) and ($desktop-max) {
     width: 768px;
+    padding-bottom: 370px;
     border: none;
-    outline: 1px solid red;
+    border-top: 1px solid #ececec;
+    background: url("../img/hero-mobile@2x.jpg") 50% 0;
+    background-size: cover;
     position: relative;
-    top: -80px;
+    top: -68px;
     z-index: 0;
   }
   @media ($desktop-min){
@@ -26,6 +29,7 @@
   line-height: 100%;
   @media ($tablet) and ($desktop-max) {
     width: 500px;
+    margin-top: 155px;
     font-size: 42px;
   }
 }
