@@ -10,11 +10,11 @@
     border-bottom: 5px solid #f1f1f1;
   }
   @media ($desktop-min){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 1050px;
+    padding-top: 50px;
+    padding-bottom:  70px;
     background: url("../img/review@1x.jpg") no-repeat;
+    background-size: 350px 100%;
     border-bottom: 5px solid #f1f1f1;
   }
 }
@@ -30,7 +30,8 @@
   }
   @media ($desktop-min){
     width: 768px;
-    height: 400px;
+    height: 327px;
+    margin-left: 175px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -80,9 +81,9 @@
     border-style: none;
   }
   @media ($desktop-min){
-    margin-top: 300px;
-    margin-left: -100px;
-    border-style: none;
+    margin-top: 250px;
+    margin-left: -160px;
+    /*border-style: none;*/
 
   }
 }
@@ -115,6 +116,7 @@
     order: -1;
   }
   @media ($desktop-min){
-    margin-left: -285px;
+    width: 175px;
+    margin-left: -175px;
   }
 }

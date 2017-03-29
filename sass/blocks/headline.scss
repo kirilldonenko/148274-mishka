@@ -4,7 +4,7 @@
   text-align: center;
   @media ($tablet) and ($desktop-max) {
     width: 768px;
-    padding-bottom: 370px;
+    padding-bottom: 350px;
     border: none;
     border-top: 1px solid #ececec;
     background: url("../img/hero-mobile@2x.jpg") 50% 0;
@@ -15,8 +15,11 @@
   }
   @media ($desktop-min){
     width: 1150px;
-    height: 580px;
+    padding-bottom: 350px;
+    background: url("../img/hero-mobile@2x.jpg") 50% 0;
+    background-size: cover;
     position: relative;
+    top: -72px;
     z-index: 0;
   }
 
@@ -29,6 +32,11 @@
   line-height: 100%;
   @media ($tablet) and ($desktop-max) {
     width: 500px;
+    margin-top: 155px;
+    font-size: 42px;
+  }
+  @media ($desktop-min){
+    width: 620px;
     margin-top: 155px;
     font-size: 42px;
   }

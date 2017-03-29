@@ -7,6 +7,10 @@
 
   }
   @media ($desktop-min){
-    order: -1;
+    width: 525px;
+    height: 460px;
+    margin-left: -90px;
+    background: url("../img/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-desktop@1x.jpg") no-repeat 50% 50%;
+    order: 5;
   }
 }

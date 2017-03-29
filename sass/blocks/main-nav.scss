@@ -15,6 +15,9 @@
 }
 
 .main-nav__toggle {
+  position: relative;
+  top: 30px;
+  right: -120px;
   width: 22px;
   height: 22px;
   background: url("../img/icon-menu-close.svg") no-repeat 50% 50%;
@@ -26,12 +29,15 @@
 
 .main-nav__list {
   width: 320px;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
   @media ($tablet) and ($desktop-max) {
     width: 768px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     border-top: 1px solid #e7e7e7;
@@ -46,9 +52,19 @@
   }
 }
 .main-nav__item {
-  padding: 25px 75px;
+  padding: 25px 0;
+  padding-left: 75px;
   font-weight: bold;
   border-bottom: 1px solid #ececec;
+  &:nth-of-type(3){
+    margin-top: 0;
+    padding: 0;
+    order: -1;
+  }
+  &:nth-of-type(6),
+  &:nth-of-type(7){
+    display: none;
+  }
   @media ($tablet) and ($desktop-max) {
     width: 170px;
     padding: 33px 0;
@@ -78,11 +94,9 @@
       border-left: 1px solid #ececec;
       order:1;
     }
-    &:nth-of-type(6){
-      display: none;
-    }
+    &:nth-of-type(6),
     &:nth-of-type(7){
-    display: none;
+      display: none;
     }
   }
   @media ($desktop-min) {
@@ -98,26 +112,31 @@
       padding-right: 0;
       border-left: 1px solid #ececec;
     }
+    &:nth-of-type(3){
+      order: 0;
+    }
     &:nth-of-type(4){
-      margin-left: 0;
+      margin-left: 100px;
       padding: 30px;
       padding-left: 85px;
       border-left: 1px solid #ececec;
     }
     &:nth-of-type(5){
-      width:160px;
-      margin-left: -147px;
+      width:171px;
+      margin-left: -155px;
       padding: 30px;
       padding-left: 85px;
-      padding-right: 20px;
+      padding-right: 0;
       background-color: #ffffff;
       border-left: 1px solid #ececec;
     }
     &:nth-of-type(6){
+      display: block;
       width:185px;
       padding: 25px 0;
     }
     &:nth-of-type(7){
+      display: block;
       width:185px;
       padding: 25px 30px;
       border-left: 1px solid #ececec;
@@ -143,6 +162,7 @@
       height: 75px;
       margin: 0;
       padding: 0;
+      order:2;
     }
   }
 
@@ -175,6 +195,7 @@
   font-size: 15px;
   margin-left: 490px;
   margin-top: -40px;
+  display: none;
   @media ($tablet) and ($desktop-max){
     margin-top: -55px;
   }
