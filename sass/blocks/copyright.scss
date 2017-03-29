@@ -1,9 +1,12 @@
 .copyright {
   margin: 25px 70px;
+  @media ($tablet){
+    margin: 0;
+  }
 }
 
 .copyright__link {
-  width: 185px;
+  width: 170px;
   height: 35px;
   display: inline-block;
   font-size: 18px;

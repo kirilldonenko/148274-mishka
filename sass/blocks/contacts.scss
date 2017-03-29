@@ -2,13 +2,17 @@
   width: 320px;
   @media ($tablet) and ($desktop-max) {
     width: 768px;
+    background: url("../img/icon-flag.svg") no-repeat 670px 45px #ffffff;
   }
   @media ($desktop-min){
-    margin-left: -400px;
+    width: 400px;
+    margin-left: -500px;
+    padding-left: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    background: url("../img/icon-flag.svg") no-repeat 40px 60px #ffffff;
   }
 }
 .contacts__title{
@@ -18,7 +22,6 @@
     width: 668px;
     padding: 20px 0px;
     font-size: 42px;
-    background: url("../img/icon-flag.svg") no-repeat 100% 50%;
   }
   @media ($desktop-min){
     width:460px;

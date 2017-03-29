@@ -2,13 +2,12 @@
   width: 320px;
   height: 460px;
   background: url("../img/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-mobile@1x.jpg") no-repeat 50% 50%;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 768px;
-
+    background: url("../img/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-tablet@1x.jpg") no-repeat 50% 50%;
   }
   @media ($desktop-min){
     width: 525px;
-    height: 460px;
     margin-left: -90px;
     background: url("../img/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-desktop@1x.jpg") no-repeat 50% 50%;
     order: 5;
