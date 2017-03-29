@@ -30,37 +30,39 @@
     <div class="catalog__wrap-title">
       <h2 class="catalog__title">Каталог товаров</h2>
     </div>
-    <figure class="product-item">
-      <img class="product-item__img" src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" />
-      <h3 class="product-item__name">Зайчик-попрыгайчик</h3>
-      <figcaption class="product-item__description">
-        Рост 30 см, вес 200 г</figcaption>
-      <div class="product-item__price">1200 руб.</div>
-    </figure>
-    <section class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <form class="form-cart" action="index.html" method="post">
-        <input class="form-cart__size-btn form-cart__size-btn--active" type="button" name="size" value="S">
-        <input class="form-cart__size-btn" type="button" name="size" value="M">
-        <input class="form-cart__size-btn" type="button" name="size" value="L">
-        <input class="form-cart__btn-submit" type="submit" name="submit" value="Добавить">
-      </form>
-    </section>
-    <figure class="product-item">
-      <img class="product-item__img" src="img/photo-2-mobile@1x.jpg" />
-      <h3 class="product-item__name">Корзинка для белья</h3>
-      <figcaption class="product-item__description">
-        Диаметр 15 см, высота 10 см</figcaption>
-      <div class="product-item__price">690 руб.</div>
-    </figure>
-    <figure class="product-item">
-      <img class="product-item__img" src="img/photo-3-mobile@1x.jpg" />
-      <h3 class="product-item__name">Большая корзинка для игрушек</h3>
-      <figcaption class="product-item__description">
-        Диаметр 30 см, высота 30 см</figcaption>
-      <div class="product-item__price">1500 руб.</div>
-    </figure>
+    <div class="product-item-wrap">
+      <figure class="product-item">
+        <img class="product-item__img" src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" />
+        <h3 class="product-item__name">Зайчик-попрыгайчик</h3>
+        <figcaption class="product-item__description">
+          Рост 30 см, вес 200 г</figcaption>
+        <div class="product-item__price">1200 руб.</div>
+      </figure>
+      <section class="modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="form-cart" action="index.html" method="post">
+          <input class="form-cart__size-btn form-cart__size-btn--active" type="button" name="size" value="S">
+          <input class="form-cart__size-btn" type="button" name="size" value="M">
+          <input class="form-cart__size-btn" type="button" name="size" value="L">
+          <input class="form-cart__btn-submit" type="submit" name="submit" value="Добавить">
+        </form>
+      </section>
+      <figure class="product-item">
+        <img class="product-item__img" src="img/photo-2-mobile@1x.jpg" />
+        <h3 class="product-item__name">Корзинка для белья</h3>
+        <figcaption class="product-item__description">
+          Диаметр 15 см, высота 10 см</figcaption>
+        <div class="product-item__price">690 руб.</div>
+      </figure>
+      <figure class="product-item">
+        <img class="product-item__img" src="img/photo-3-mobile@1x.jpg" />
+        <h3 class="product-item__name">Большая корзинка для игрушек</h3>
+        <figcaption class="product-item__description">
+          Диаметр 30 см, высота 30 см</figcaption>
+        <div class="product-item__price">1500 руб.</div>
+      </figure>
+    </div>
   </article>
   <section class="production-process">
     <h3 class="production-process__title">Процесс производства</h3>
