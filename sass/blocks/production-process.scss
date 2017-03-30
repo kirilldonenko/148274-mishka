@@ -5,13 +5,20 @@
   border: 1px solid #ececec;
   font-size: 14px;
   line-height: 150%;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 668px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
     margin-bottom: 65px;
+  }
+  @media ($desktop-min){
+    width: 1050px;
+    height: 455px;
+    margin-bottom: 105px;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
 }
 
@@ -21,7 +28,7 @@
   margin-left: 20px;
   padding-left: 80px;
   background: url("../img/icon-video.svg") no-repeat 10% 50%;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 505px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -30,13 +37,21 @@
     font-size: 22px;
     background: url("../img/icon-video.svg") no-repeat 0 50%;
   }
+  @media ($desktop-min){
+    width: 155px;
+    height: 40px;
+    margin: 50px 0;
+    padding: 0;
+    padding-top: 60px;
+    background: url("../img/icon-video.svg") no-repeat 0 0;
+  }
 }
 
 .production-process__video {
   width: 260px;
   height: 150px;
   background: url("../img/icon-play.svg") no-repeat 50% 50%, url("../img/video-mobile@1x.jpg");
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 668px;
     height: 455px;
     order: -1;
@@ -47,9 +62,13 @@
 
 .production-process__text {
   margin-left: 30px;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 580px;
     margin: 0;
+  }
+  @media ($desktop-min){
+    width: 230px;
+    line-height: 200%;
   }
 }
 
