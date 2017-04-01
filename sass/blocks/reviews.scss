@@ -1,45 +1,44 @@
 .reviews {
   width: 260px;
   border-bottom: 2px solid #f1f1f1;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 768px;
-    background: url("../img/review@1x.jpg") no-repeat;
+    padding:70px 0;
     border-bottom: 5px solid #f1f1f1;
+    background: url("../img/review@1x.jpg") no-repeat;
+    background-size: 350px 100%;
+    @media ($retina-dpi), ($retina-dppx){
+      background: url("../img/review@2x.jpg") no-repeat;
+      background-size: 350px 100%;
+    }
   }
   @media ($desktop-min){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 1050px;
-    background: url("../img/review@1x.jpg") no-repeat;
     border-bottom: 5px solid #f1f1f1;
   }
 }
 .reviews__wrap{
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 668px;
-    height: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     border: 1px solid red;
   }
   @media ($desktop-min){
     width: 768px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border: 1px solid red;
+    margin-left: 175px;
   }
 }
 .reviews__title {
   font-size: 40px;
+  @media ($tablet){
+    margin-top: -55px;
+  }
 }
 .reviews__item{
   margin: 0;
@@ -50,7 +49,7 @@
   color: #696969;
   font-size: 16px;
   line-height: 200%;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
   width: 668px;
   }
   @media ($desktop-min){
@@ -73,17 +72,11 @@
   width: 260px;
   border: 1px solid #ececec;
   margin-bottom: 30px;
-  @media ($tablet) and ($desktop-max) {
-    margin: 0;
-    margin-top: 400px;
-    margin-left: -260px;
+  @media ($tablet) {
+    width: 170px;
+    align-self: flex-end;
+    margin-top: -75px;
     border-style: none;
-  }
-  @media ($desktop-min){
-    margin-top: 300px;
-    margin-left: -100px;
-    border-style: none;
-
   }
 }
 
@@ -109,12 +102,10 @@
   }
 }
 .reviews__write{
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
+    width: 175px;
     margin: 0;
-    margin-left:400px;
+    align-self: flex-end;
     order: -1;
-  }
-  @media ($desktop-min){
-    margin-left: -285px;
   }
 }

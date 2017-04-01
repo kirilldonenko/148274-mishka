@@ -1,25 +1,33 @@
 .form-order {
   width: 260px;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 668px;
+  }
+  @media ($desktop-min){
+    width: 1050px;
   }
 }
 
 .form-order__headline {
+  margin: 0;
   text-transform: uppercase;
   color: $color-base;
   font-size: 16px;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 165px;
   }
+  @media ($desktop-min){
+    width: 125px;
+  }
+
 }
 .form-order__wrap-block{
-  @media ($tablet) and ($desktop-max) {
-    width: 600px;
+  @media ($tablet) {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 70px;
+    margin-top: 50px;
     &--edges{
       width: 668px;
       justify-content: space-between;
@@ -31,9 +39,20 @@
       align-items: center;
     }
   }
+    @media ($desktop-min){
+      &--edges{
+      width: 825px;
+      justify-content: flex-start;
+    }
+      &--reverse{
+        width: 875px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
 }
 .form-order__wrap-type{
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -41,7 +60,7 @@
   }
 }
 .form-order__wrap-color{
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 500px;
     display: flex;
     justify-content: flex-start;
@@ -49,11 +68,16 @@
     align-items: flex-start;
     outline: 1px solid red;
   }
+  @media ($desktop-min){
+    width: 730px;
+  }
 }
 .form-order__wrap-bio{
-  @media ($tablet) and ($desktop-max) {
+  outline: 1px solid red;
+  @media ($tablet) {
     width: 500px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
@@ -61,57 +85,90 @@
       margin-bottom: 20px;
     }
   }
+  @media ($desktop-min){
+    width: 700px;
+    font-size: 18px;
+    font-weight: bold;
+  }
 }
 .form-order__wrap-communications{
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 500px;
+  }
+  @media ($desktop-min){
+    width: 700px;
   }
 }
 .form-order__label {
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     margin-top: 20px;
     margin-bottom: 20px;
     &--small-width{
-      width: 220px;
+    width: 220px;
+    }
+  }
+  @media ($desktop-min){
+    &--small-width{
+      width: 240px;
     }
   }
 }
-
+.form-order__input{
+  zoom: 3;
+}
 .form-order__input-text {
   display: inline-block;
   width: 260px;
   padding: 20px 0;
   border-style: none;
   border-bottom: 2px solid black;
-  @media ($tablet) and ($desktop-max) {
+  &--tel {
+    background: url("../img/icon-phone.svg") no-repeat 95% 50%;
+  }
+  &--email {
+    background: url("../img/icon-mail.svg") no-repeat 95% 50%;
+  }
+  @media ($tablet) {
     width: 390px;
     &--big-width{
       width: 430px;
     }
-  }
-  &--tel {
-    background: url("../img/icon-phone.svg") no-repeat 95% 50%;
-    @media ($tablet) and ($desktop-max) {
+    &--tel, &--email{
       width: 500px;
-      }
+    }
   }
-
-  &--email {
-    background: url("../img/icon-mail.svg") no-repeat 95% 50%;
-    @media ($tablet) and ($desktop-max) {
-      width: 500px;
-      }
+  @media ($desktop-min){
+    width:575px;
+    font-size: 18px;
+    &--big-width{
+      width: 625px;
+    }
+    &--tel, &--email{
+      width: 700px;
+    }
   }
 }
 .form-order__textarea{
   width: 260px;
   height: 140px;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 500px;
     height: 140px;
     }
+  @media ($desktop-min){
+    width: 700px;
+    font-size: 18px;
+  }
 }
 .form-order__submit {
   margin-left: 0;
   background-color: #ffffff;
+  @media ($desktop-min){
+    margin-left: 125px;
+  }
+}
+.form-order__text-required{
+  @media ($desktop-min){
+    margin-left: 170px;
+  }
 }

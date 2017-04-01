@@ -15,6 +15,9 @@
 }
 
 .main-nav__toggle {
+  position: relative;
+  top: 30px;
+  right: -120px;
   width: 22px;
   height: 22px;
   background: url("../img/icon-menu-close.svg") no-repeat 50% 50%;
@@ -26,12 +29,15 @@
 
 .main-nav__list {
   width: 320px;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
   @media ($tablet) and ($desktop-max) {
     width: 768px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     border-top: 1px solid #e7e7e7;
@@ -46,40 +52,49 @@
   }
 }
 .main-nav__item {
-  padding: 25px 75px;
+  padding: 25px 0;
+  padding-left: 75px;
+  font-weight: bold;
   border-bottom: 1px solid #ececec;
+  &:nth-of-type(3){
+    margin-top: 0;
+    padding: 0;
+    order: -1;
+  }
+  &:nth-of-type(6),
+  &:nth-of-type(7){
+    display: none;
+  }
   @media ($tablet) and ($desktop-max) {
     width: 170px;
-    padding: 20px 0;
+    padding: 33px 0;
     border-bottom: none;
     &:nth-of-type(1){
-    order:2;
-
+      width: 167px;
+      margin-left: 50px;
+      order:2;
     }
     &:nth-of-type(2){
-    order:3;
-
+      order:3;
     }
     &:nth-of-type(4) {
-      width:225px;
-      padding-left: 75px;
-      background-position: 35px 50%;
+      width:170px;
+      padding: 0;
+      padding-left: 80px;
       border-left: 1px solid #ececec;
-      order:4;
+      order:0;
     }
     &:nth-of-type(5) {
-      width:225px;
-      padding-left: 85px;
-      padding-top: 30px;
+      width:180px;
+      margin-left: -165px;
+      padding-right: 0;
+      padding-left: 90px;
       background-color: #ffffff;
       background-position: 35px 50%;
       border-left: 1px solid #ececec;
-      vertical-align: top;
-      order:5;
+      order:1;
     }
-    &:nth-of-type(6){
-      display: none;
-    }
+    &:nth-of-type(6),
     &:nth-of-type(7){
       display: none;
     }
@@ -97,52 +112,59 @@
       padding-right: 0;
       border-left: 1px solid #ececec;
     }
+    &:nth-of-type(3){
+      order: 0;
+    }
     &:nth-of-type(4){
-      margin-left: 0;
+      margin-left: 100px;
       padding: 30px;
       padding-left: 85px;
       border-left: 1px solid #ececec;
     }
     &:nth-of-type(5){
-      width:160px;
-      margin-left: -147px;
+      width:171px;
+      margin-left: -155px;
       padding: 30px;
       padding-left: 85px;
-      padding-right: 20px;
+      padding-right: 0;
       background-color: #ffffff;
       border-left: 1px solid #ececec;
     }
     &:nth-of-type(6){
+      display: block;
       width:185px;
       padding: 25px 0;
     }
     &:nth-of-type(7){
+      display: block;
       width:185px;
       padding: 25px 30px;
       border-left: 1px solid #ececec;
     }
   }
   &--logo {
-  display: block;
-  width: 90px;
-  height: 35px;
-  margin: 20px auto;
-  outline: 1px solid blue;
-  @media ($tablet) and ($desktop-max) {
-    width: 110px;
-    height: 50px;
-    order: -1;
-    margin-right: 205px;
-    align-self: flex-start;
+    display: block;
+    width: 90px;
+    height: 35px;
+    margin: 20px auto;
+    outline: 1px solid blue;
+    @media ($tablet) and ($desktop-max) {
+      width: 110px;
+      height: 50px;
+      margin-right: 210px;
+      margin-left: 50px;
+      padding: 0;
+      order: -1;
+      align-self: flex-start;
+    }
+    @media ($desktop-min) {
+      width: 160px;
+      height: 75px;
+      margin: 0;
+      padding: 0;
+      order:2;
+    }
   }
-  @media ($desktop-min) {
-    width: 160px;
-    height: 75px;
-    margin: 0;
-    padding: 0;
-
-  }
-}
 
   &--cart {
     background: url("../img/icon-cart.svg") no-repeat 35px 50%;
@@ -150,10 +172,10 @@
 }
 .main-nav__search{
   display: inline-block;
-  margin-left: -40px;
+  margin-left: -45px;
   margin-right: 22px;
   @media ($tablet) and ($desktop-max) {
-    padding-top: 15px;
+    padding: 33px 0;
     margin-right: 32px;
     }
   @media ($desktop-min){
@@ -173,6 +195,10 @@
   font-size: 15px;
   margin-left: 490px;
   margin-top: -40px;
+  display: none;
+  @media ($tablet) and ($desktop-max){
+    margin-top: -55px;
+  }
   @media ($desktop-min){
     margin-top: -45px;
   }

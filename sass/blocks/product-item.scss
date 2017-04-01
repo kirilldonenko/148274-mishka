@@ -3,7 +3,7 @@
   margin-top: 30px;
   margin-left: 30px;
   border: 1px solid #ececec;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,14 +12,27 @@
     width: 668px;
     height: 335px;
   }
+  @media ($desktop-min){
+    display: block;
+    width: 315px;
+    height: 660px;
+    margin: 0;
+    outline: 1px solid red;
+  }
+
 }
 
 .product-item__img {
+  width: 260px;
+  height: 196px;
   margin-top: 0;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 335px;
     height: 335px;
-    outline: 1px solid red;
+  }
+  @media ($desktop-min){
+    width: 318px;
+    height: 463px;
   }
 }
 

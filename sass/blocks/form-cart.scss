@@ -3,13 +3,14 @@
   margin: 0 auto;
   @media ($tablet) and ($desktop-max) {
     width: 350px;
+    margin: 0;
   }
 }
 
 .form-cart__size-btn {
   display: inline-block;
   width: 80px;
-  margin-right: 3px;
+  margin-left: 5px;
   padding-top: 10px;
   padding-bottom: 15px;
   text-align: center;
@@ -19,9 +20,15 @@
   color: #5d5d5d;
   background-color: #ffffff;
   border: 2px solid #ececec;
+  &:first-of-type {
+    margin-left: 0;
+  }
   @media ($tablet) and ($desktop-max) {
     width: 110px;
-    margin-right: 10px;
+    margin-left: 5px;
+    &:first-of-type {
+      margin-left: 0;
+    }
   }
 
   &--active {

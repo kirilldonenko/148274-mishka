@@ -1,0 +1,9 @@
+.product-item-wrap{
+  @media ($desktop-min){
+    width: 1050px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
