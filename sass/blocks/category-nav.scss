@@ -1,8 +1,8 @@
 .category-nav {
   width: 320px;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet)  {
     width: 768px;
-    margin-top: -160px;
+    margin-top: -200px;
     display: flex;
     justify-content: center;
     background-color: #f9f9f9;
@@ -12,12 +12,7 @@
   }
   @media ($desktop-min) {
     width: 1150px;
-    margin-top: -160px;
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid black;
-    position: relative;
-    z-index: 5;
+    margin-top: -195px;
   }
 }
 .category-nav__list {

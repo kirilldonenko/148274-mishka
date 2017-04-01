@@ -23,11 +23,16 @@
 }
 
 .product-item__img {
+  width: 260px;
+  height: 196px;
   margin-top: 0;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 335px;
     height: 335px;
-
+  }
+  @media ($desktop-min){
+    width: 318px;
+    height: 463px;
   }
 }
 
