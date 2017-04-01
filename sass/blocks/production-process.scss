@@ -39,6 +39,7 @@
     width: 155px;
     height: 40px;
     margin: 50px 0;
+    margin-right:  140px;
     padding: 60px 0 0;
     background: url("../img/icon-video.svg") no-repeat 0 0;
   }
@@ -64,7 +65,8 @@
     @media ($desktop-min) {
       width: 668px;
       height: 455px;
-      order: -1;
+      margin-top: -367px;
+      order: 10;
       align-self: flex-start;
       background: url("../img/icon-play.svg") no-repeat 50% 50%, url("../img/video-desktop@1x.jpg");
       @media ($retina-dpi), ($retina-dppx) {
@@ -80,6 +82,7 @@
       }
       @media ($desktop-min) {
         width: 230px;
+        margin-right:  60px;
         line-height: 200%;
       }
     }
@@ -93,5 +96,6 @@
       @media ($desktop-min){
         width: 230px;
         margin: 0;
+        margin-right:  60px;
       }
     }
