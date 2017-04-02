@@ -34,17 +34,33 @@
       <p class="main-nav__text">Бесплатная доставка по России</p>
     </nav>
   </header>
+  <script>
+    var mainNav = document.querySelector('.main-nav');
+    var toggle = document.querySelector('.main-nav__toggle');
+    mainNav.classList.remove('main-nav--nojs');
+    toggle.addEventListener('click', function() {
+      if (mainNav.classList.contains('main-nav--closed')) {
+        mainNav.classList.remove('main-nav--closed');
+        mainNav.classList.add('main-nav--opened');
+      } else {
+        mainNav.classList.add('main-nav--closed');
+        mainNav.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
   <div class="headline">
     <h1 class="headline__text">Милые штуки ручной работы для дома</h2>
   </div>
   <nav class="category-nav">
     <ul class="category-nav__list">
-      <li class="category-nav__item category-nav__item--interior"><a class="category-nav__link" href="#">
-        Предметы интерьера
-      </a></li>
-      <li class="category-nav__item category-nav__item--toy"><a class="category-nav__link" href="#">
-        Детские игрушки</a>
-      </li>
+      <a class="category-nav__link" href="#">
+        <li class="category-nav__item category-nav__item--interior">
+        Предметы интерьера</li>
+      </a>
+      <a class="category-nav__link" href="#">
+        <li class="category-nav__item category-nav__item--toy">
+        Детские игрушки</li>
+      </a>
     </ul>
     </nav>
     <section class="product-of-week">
@@ -134,9 +150,9 @@
     <footer class="page-footer">
       <img class="page-footer__logo" src="./img/logo-footer.svg" alt="Mishka">
       <article class="social">
-        <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy">instagram</a>
-        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">facebook</a>
-        <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru">twitter</a>
+        <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
+        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
+        <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru"></a>
       </article>
       <article class="copyright">
       <a class="copyright__link" href="https://htmlacademy.ru">Разработано</a>

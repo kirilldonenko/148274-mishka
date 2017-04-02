@@ -100,6 +100,7 @@
   }
 }
 .form-order__label {
+  font-weight: bold;
   @media ($tablet) {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -112,9 +113,6 @@
       width: 240px;
     }
   }
-}
-.form-order__input{
-  zoom: 3;
 }
 .form-order__input-text {
   display: inline-block;
