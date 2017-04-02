@@ -17,7 +17,7 @@
   width: 140px;
   margin: 30px auto;
   text-transform: uppercase;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 355px;
     margin: 0;
     margin-top: 40px;
@@ -30,7 +30,7 @@
   width: 150px;
   margin: 30px auto;
   font-size: 16px;
-  @media ($tablet) and ($desktop-max){
+  @media ($tablet){
     margin: 30px 0;
   }
 }
