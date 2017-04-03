@@ -53,7 +53,7 @@
             Рост 30 см, вес 200 г</figcaption>
         </div>
         <div class="product-item__price"><span class="order__price">1200 руб.</span>
-          <a class="order" href="#"><img src="img/icon-cart.svg" /></a>
+          <a href="#"><img class="order" src="img/icon-cart.svg" /></a>
         </div>
 
 
@@ -72,7 +72,7 @@
             Диаметр 15 см, высота 10 см</figcaption>
         </div>
         <div class="product-item__price"><span class="order__price">690 руб.</span>
-          <a class="order" href="#"><img src="img/icon-cart.svg" /></a>
+          <a href="#"><img class="order" src="img/icon-cart.svg" /></a>
         </div>
 
       </figure>
@@ -90,7 +90,7 @@
             Диаметр 30 см, высота 30 см</figcaption>
         </div>
         <div class="product-item__price"><span class="order__price">1500 руб.</span>
-          <a class="order" href="#"><img src="img/icon-cart.svg" /></a>
+          <a href="#"><img class="order" src="img/icon-cart.svg" /></a>
         </div>
 
       </figure>
@@ -107,7 +107,7 @@
     <a class="production-process__order btn" href="form.html">Сделать заказ</a>
   </section>
   <footer class="page-footer">
-    <img class="page-footer__logo" src="./img/logo-footer.svg" alt="Mishka">
+    <a href="index.html"><img class="page-footer__logo" src="./img/logo-footer.svg" alt="Mishka"></a>
     <article class="social">
       <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
       <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
@@ -117,7 +117,7 @@
       <a class="copyright__link" href="https://htmlacademy.ru">Разработано</a>
     </article>
   </footer>
-  <section class="modal">
+  <section class="modal visually-hidden">
     <h2 class="modal__title">Добавить в корзину</h2>
     <p class="modal__text">Выберите размер:</p>
     <form class="form-modal" action="index.html" method="post">
@@ -145,7 +145,21 @@
     });
   </script>
   <script>
-    var buttons = document.querySelector(".form-modal__label");
+    var buttons = document.querySelectorAll(".order");
+    var modal = document.querySelector(".modal");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function() {
+        modal.classList.remove('visually-hidden');
+      });
+    };
+    addEventListener('keydown', function(event) {
+      if (event.keyCode == 27) {
+        modal.classList.add('visually-hidden');
+      };
+    });
+    buttonSubmit.addEventListener('click', function() {
+      modal.classList.add('visually-hidden');
+    });
   </script>
 </body>
 

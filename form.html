@@ -92,29 +92,15 @@
     </form>
   </section>
   <footer class="page-footer">
-    <img class="page-footer__logo" src="./img/logo-footer.svg" alt="Mishka">
+    <a href="index.html"><img class="page-footer__logo" src="./img/logo-footer.svg" alt="Mishka"></a>
     <article class="social">
-      <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy">instagram</a>
-      <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">facebook</a>
-      <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru">twitter</a>
+      <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
+      <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
+      <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru"></a>
     </article>
     <article class="copyright">
     <a class="copyright__link" href="https://htmlacademy.ru">Разработано</a>
     </article>
   </footer>
-  <script>
-    var mainNav = document.querySelector('.main-nav');
-    var toggle = document.querySelector('.main-nav__toggle');
-    mainNav.classList.remove('main-nav--nojs');
-    toggle.addEventListener('click', function() {
-      if (mainNav.classList.contains('main-nav--closed')) {
-        mainNav.classList.remove('main-nav--closed');
-        mainNav.classList.add('main-nav--opened');
-      } else {
-        mainNav.classList.add('main-nav--closed');
-        mainNav.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
 </body>
 </html>

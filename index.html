@@ -88,7 +88,7 @@
           <img class="product-of-week__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@1x.jpg 2x" width="260" height="300" alt="корзинки">
         </picture>
       <p class="product-of-week__price">Цена: 990 руб.</p>
-      <a class="product-of-week__order btn order" href="#">Заказать</a>
+      <a class="product-of-week__order btn" href="#">Заказать</a>
       </div>
     </section>
     <section class="about-us">
@@ -139,7 +139,7 @@
     </div>
 
     <footer class="page-footer">
-      <img class="page-footer__logo" src="./img/logo-footer.svg" alt="Mishka">
+      <a href="index.html"><img class="page-footer__logo" src="./img/logo-footer.svg" alt="Mishka"></a>
       <article class="social">
         <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
         <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
@@ -149,6 +149,35 @@
       <a class="copyright__link" href="https://htmlacademy.ru">Разработано</a>
       </article>
     </footer>
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="form-modal" action="index.html" method="post">
+        <label for="sizeS" class="form-modal__label form-modal__label--active">S</label>
+        <input id="sizeS" class="form-modal__input" type="checkbox" name="size" value="S">
+        <label for="sizeM" class="form-modal__label">M</label>
+        <input id="sizeM" class="form-modal__input" type="checkbox" name="size" value="M">
+        <label for="sizeL" class="form-modal__label">L</label>
+        <input id="sizeL" class="form-modal__input" type="checkbox" name="size" value="L">
+        <input class="form-modal__submit" type="submit" name="submit" value="Добавить">
+      </form>
+    </section>
+    <script>
+      var buttonOrder = document.querySelector(".product-of-week__order");
+      var modal = document.querySelector(".modal");
+      var buttonSubmit = document.querySelector(".form-modal__submit");
+      buttonOrder.addEventListener('click', function() {
+        modal.classList.remove('visually-hidden');
+      });
+      addEventListener('keydown', function(event) {
+        if (event.keyCode == 27) {
+          modal.classList.add('visually-hidden');
+        };
+      });
+      buttonSubmit.addEventListener('click', function() {
+        modal.classList.add('visually-hidden');
+      });
+    </script>
     <script>
       var mainNav = document.querySelector('.main-nav');
       var toggle = document.querySelector('.main-nav__toggle');

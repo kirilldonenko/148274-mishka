@@ -1,11 +1,11 @@
 .form-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 260px;
   margin: 0 auto;
   @media ($tablet) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
     width: 350px;
     margin: 0;
   }
@@ -22,7 +22,7 @@
     border-color: #63d1bb;
   }
   @media ($tablet) {
-    width: 110px;
+    width: 107px;
   }
 }
 .form-modal__input{

@@ -1,36 +1,30 @@
 .modal {
   width: 320px;
+  border: 1px solid #c7c7c7;
   @media ($tablet) {
-    width: 558px;
+    width: 567px;
     height: 338px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: 1px solid red;
-  }
-  @media ($desktop-min){
-    display: none;
   }
 }
 
 .modal__title {
-  width: 140px;
+  width: 154px;
   margin: 30px auto;
   text-transform: uppercase;
+  font-size: 26px;
+  text-align: center;
   @media ($tablet) {
     width: 355px;
-    margin: 0;
-    margin-top: 40px;
-    text-align: center;
+    margin: 40px auto;
     font-size: 30px;
   }
 }
 
 .modal__text {
   width: 150px;
-  margin: 30px auto;
+  margin: -15px auto 30px;
   font-size: 16px;
-  @media ($tablet){
-    margin: 30px 0;
-  }
 }
