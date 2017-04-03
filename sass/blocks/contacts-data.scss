@@ -1,12 +1,22 @@
 .contacts-data {
   width: 320px;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     width: 768px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-
   }
+  @media ($desktop-min){
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.contacts-data__e-mail-wrap,
+.contacts-data__address-wrap{
+  @media ($desktop-min){
+  display: flex;
+  flex-direction: row;
+}
 }
 
 .contacts-data__e-mail {
@@ -21,6 +31,9 @@
   width: 185px;
   margin-bottom: 40px;
   font-size: 14px;
+  text-decoration: none;
+  color:#dadada;
+  border-bottom: $color-base;
 }
 
 .contacts-data__adds {

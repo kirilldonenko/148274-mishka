@@ -12,7 +12,7 @@
   }
   @media ($desktop-min) {
     width: 1150px;
-    margin-top: -195px;
+    margin-top: -180px;
   }
 }
 .category-nav__list {
@@ -21,29 +21,18 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     display: flex;
     flex-direction: row;
     width: 668px;
   }
   @media ($desktop-min) {
-    display: flex;
-    flex-direction: row;
     width: 1050px;
   }
 }
 
 .category-nav__item {
   padding: 30px;
-  font-size: 16px;
-  @media ($tablet) and ($desktop-max) {
-    width: 330px;
-    font-size: 22px;
-  }
-  @media ($desktop-min) {
-    width: 525px;
-    font-size: 22px;
-  }
   &--interior {
     background: url("../img/icon-interior.svg") no-repeat 87% 50% $color-base;
   }
@@ -51,13 +40,26 @@
   &--toy {
     background: url("../img/icon-toy.svg") no-repeat 90% 50% #56c3b2;
   }
+  @media ($tablet) {
+    padding-right: 120px;
+    font-size: 22px;
+  }
+  @media ($desktop-min){
+    padding-right: 320px;
+  }
 }
 
 .category-nav__link {
+  display: block;
+  font-size: 16px;
   text-decoration: none;
   color: white;
-  @media ($tablet) and ($desktop-max) {
-    display: block;
-    width: 150px;
+  @media ($tablet) {
+    width: 430px;
+    font-size: 22px;
+  }
+  @media ($desktop-min) {
+    width: 525px;
+
   }
 }

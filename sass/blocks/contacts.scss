@@ -10,7 +10,7 @@
     padding-left: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+  align-items: flex-start;
     flex-wrap: wrap;
     background: url("../img/icon-flag.svg") no-repeat 40px 60px #ffffff;
   }
@@ -37,6 +37,7 @@
 
   }
   @media ($desktop-min){
+    margin-top: 37px;
     margin-bottom: 0;
   }
 }
