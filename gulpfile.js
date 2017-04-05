@@ -53,11 +53,11 @@ gulp.task("symbols", function() {
   .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("html:copy", function() {
+gulp.task("copy", function() {
   return gulp.src("*.html")
   .pipe(gulp.dest("build"));
 });
-gulp.task("html:update", ["html:copy"], function(done) {
+gulp.task("update", ["copy"], function(done) {
   server.reload();
   done();
 });
@@ -71,7 +71,7 @@ gulp.task("serve", function() {
     ui: false
   });
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html"), [html:update]);
+  gulp.watch("*.html"), [update];
 });
 
 gulp.task("clean", function() {
