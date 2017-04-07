@@ -1,8 +1,8 @@
 .modal {
   width: 320px;
+  background-color: #ffffff;
   position: fixed;
-  left:50%;
-  top:50%;
+  z-index: 100;
   border: 1px solid #c7c7c7;
   @media ($tablet) {
     width: 567px;

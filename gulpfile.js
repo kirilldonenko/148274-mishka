@@ -67,7 +67,7 @@ gulp.task("serve", function() {
     ui: false
   });
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html", [update]);
+  gulp.watch("*.html", ["update"]);
 });
 
 gulp.task("clean", function() {
@@ -78,7 +78,7 @@ gulp.task("copy", function() {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
     "img/**",
-    "js/**",
+    "js/*",
     "*.html"
   ], {
     base: "."

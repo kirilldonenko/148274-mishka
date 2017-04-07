@@ -1,6 +1,7 @@
 .contacts-data {
   width: 320px;
   color:#dadada;
+  font-size: 16px;
   @media ($tablet) {
     width: 768px;
     display: flex;
@@ -18,7 +19,7 @@
   @media ($desktop-min){
   display: flex;
   flex-direction: row;
-  font-size: 18px;
+
 }
 }
 
@@ -32,14 +33,21 @@
 .contacts-data__e-mail-link {
   display: inline-block;
   vertical-align: top;
-  width: 185px;
+  width: 190px;
   margin-bottom: 40px;
 }
 .contacts-data__e-mail-link-a{
   display: block;
   text-decoration: none;
   border-bottom: 1px solid $color-base;
-
+  color:#a8a8a8;
+  &:hover{
+    color:$color-base;
+  }
+  &:active{
+    color:#c7ece7;
+    border-bottom: 1px solid #ecf9f7;
+  }
 }
 .contacts-data__adds {
   display: inline-block;
@@ -50,9 +58,8 @@
 
 .contacts-data__address {
   display: inline-block;
-  width: 150px;
-  margin-bottom: 40px;
-  font-size: 14px;
+  width: 230px;
+  margin-bottom: 85px;
   line-height: 200%;
   vertical-align: top;
 }

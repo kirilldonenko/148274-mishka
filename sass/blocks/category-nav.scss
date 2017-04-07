@@ -33,12 +33,21 @@
 
 .category-nav__item {
   padding: 30px;
+  &:hover{
+    margin-top: -5px;
+  }
   &--interior {
     background: url("../img/icon-interior.svg") no-repeat 87% 50% $color-base;
+    &:active{
+      color:#8be2d0;
+    }
   }
 
   &--toy {
     background: url("../img/icon-toy.svg") no-repeat 90% 50% #56c3b2;
+    &:active{
+      color:#7ed4c6;
+    }
   }
   @media ($tablet) {
     font-size: 22px;

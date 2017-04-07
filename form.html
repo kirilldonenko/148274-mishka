@@ -41,19 +41,25 @@
       <div class="form-order__wrap-block">
         <h2 class="form-order__headline">Тип</h2>
         <div class="form-order__wrap-type">
-          <label class="form-order__label" for="type_accessories"><input class="form-order__input" type="radio" name="type" id="type_accessories" value="accessories" checked />Аксессуар для интерьера</label>
-          <label class="form-order__label" for="type_toys"><input class="form-order__input" type="radio" name="type" id="type_toys" value="toys" />Детская игрушка</label>
+          <input class="form-order__input" type="radio" name="type" id="type_accessories" value="accessories" checked /><label class="form-order__label" for="type_accessories">Аксессуар для интерьера</label>
+          <input class="form-order__input" type="radio" name="type" id="type_toys" value="toys" /><label class="form-order__label" for="type_toys">Детская игрушка</label>
         </div>
       </div>
-      <div class="form-order__wrap-block">
+      <div class="form-order__wrap-block form-order__wrap-block--bg">
         <h2 class="form-order__headline">Цвет</h2>
         <div class="form-order__wrap-color">
-          <label class="form-order__label form-order__label--small-width" for="color_white"><input class="form-order__input" type="checkbox" name="white" id="color_white" checked />Белый</label>
-          <label class="form-order__label form-order__label--small-width" for="color_grey"><input class="form-order__input" type="checkbox" name="grey" id="color_grey" checked />Серый</label>
-          <label class="form-order__label form-order__label--small-width" for="color_tiffany"><input class="form-order__input" type="checkbox" name="tiffany" id="color_tiffany" />&laquo;Тиффани&raquo;</label>
-          <label class="form-order__label form-order__label--small-width" for="color_black"><input class="form-order__input" type="checkbox" name="black" id="color_black" />Черный</label>
-          <label class="form-order__label form-order__label--small-width" for="color_pink"><input class="form-order__input" type="checkbox" name="pink" id="color_pink" />Розовый</label>
-          <label class="form-order__label form-order__label--small-width" for="color_orange"><input class="form-order__input" type="checkbox" name="orange" id="color_orange" />Оранжевый</label>
+          <input class="form-order__input" type="checkbox" name="white" id="color_white" checked />
+          <label class="form-order__label form-order__label--small-width" for="color_white">Белый</label>
+          <input class="form-order__input" type="checkbox" name="grey" id="color_grey" checked />
+          <label class="form-order__label form-order__label--small-width" for="color_grey">Серый</label>
+          <input class="form-order__input" type="checkbox" name="tiffany" id="color_tiffany" />
+          <label class="form-order__label form-order__label--small-width" for="color_tiffany">&laquo;Тиффани&raquo;</label>
+          <input class="form-order__input" type="checkbox" name="black" id="color_black" />
+          <label class="form-order__label form-order__label--small-width" for="color_black">Черный</label>
+          <input class="form-order__input" type="checkbox" name="pink" id="color_pink" />
+          <label class="form-order__label form-order__label--small-width" for="color_pink">Розовый</label>
+          <input class="form-order__input" type="checkbox" name="orange" id="color_orange" />
+          <label class="form-order__label form-order__label--small-width" for="color_orange">Оранжевый</label>
         </div>
       </div>
       <div class="form-order__wrap-block form-order__wrap-block--edges">
@@ -67,13 +73,13 @@
           <input class="form-order__input-text" type="text" name="patronymic" id="fullname_patronymic" placeholder="Отчество, если желаете" />
         </div>
       </div>
-      <div class="form-order__wrap-block form-order__wrap-block--edges">
+      <div class="form-order__wrap-block form-order__wrap-block--edges form-order__wrap-block--bg">
         <h2 class="form-order__headline">Тел</h2>
         <div class="form-order__wrap-communications">
           <input class="form-order__input-text form-order__input-text--tel" type="tel" name="tel" placeholder="+7 XXX XX XX*"  required />
         </div>
       </div>
-      <div class="form-order__wrap-block form-order__wrap-block--edges">
+      <div class="form-order__wrap-block form-order__wrap-block--edges form-order__wrap-block--bg">
         <h2 class="form-order__headline">e-mail</h2>
         <div class="form-order__wrap-communications">
           <input class="form-order__input-text form-order__input-text--email" type="email" name="e-mail" placeholder="Ваш Email*" required />

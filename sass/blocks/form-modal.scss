@@ -18,12 +18,15 @@
   font-size: 16px;
   color: #5d5d5d;
   border: 2px solid #ececec;
-  &--active {
-    border-color: #63d1bb;
+  &:hover{
+    border-color: #c7c7c7;
   }
   @media ($tablet) {
     width: 107px;
   }
+}
+.form-modal__input:checked + .form-modal__label{
+  border-color: $color-base;
 }
 .form-modal__input{
   display: none;

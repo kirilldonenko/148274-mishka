@@ -10,11 +10,13 @@
 
 .form-order__headline {
   margin: 0;
+  margin-top: 30px;
   text-transform: uppercase;
   color: $color-base;
   font-size: 16px;
   @media ($tablet) {
     width: 165px;
+    margin-top: 20px;
   }
   @media ($desktop-min){
     width: 125px;
@@ -44,6 +46,9 @@
       width: 825px;
       justify-content: flex-start;
     }
+      &--bg{
+        background-color:#f1f1f1;
+      }
       &--reverse{
         width: 875px;
         margin-top: 10px;
@@ -52,6 +57,8 @@
     }
 }
 .form-order__wrap-type{
+  margin-top: 30px;
+  margin-left: 15px;
   @media ($tablet) {
     display: flex;
     flex-direction: column;
@@ -60,6 +67,7 @@
   }
 }
 .form-order__wrap-color{
+  margin-top: 30px;
   @media ($tablet) {
     width: 500px;
     display: flex;
@@ -72,6 +80,7 @@
   }
 }
 .form-order__wrap-bio{
+  margin-top: 30px;
   @media ($tablet) {
     width: 500px;
     display: flex;
@@ -103,25 +112,27 @@
 
 .form-order__label {
   display: inline-block;
-  font-weight: bold;
   vertical-align: middle;
+  margin-bottom: 20px;
+  font-weight: bold;
   &::before{
     content:"";
     display: inline-block;
+    vertical-align: middle;
     margin-right:  45px;
     width: 15px;
     height: 15px;
     border-radius:50%;
-    background: #ffffff;
+    background-color: #ffffff;
     box-shadow:  0 0 0 13px #ffffff, 0 0 0 15px #717171,;
-    vertical-align: middle;
+
   }
   &::before:hover{
     box-shadow:  0 0 0 14px #ffffff, 0 0 0 15px #717171;
   }
-  /*&::before:active{
+  &::before:active{
     box-shadow:  0 0 0 14px #ffffff, 0 0 0 15px #d7d7d7;
-  }*/
+  }
   &--small-width{
     &::before{
       content:"";
@@ -131,7 +142,7 @@
       box-shadow: none;
       width: 40px;
       height:40px;
-      background-color: #ffffff;
+      background-color:#f1f1f1;
       border: 2px solid #444444;
       vertical-align: middle;
     }
@@ -166,8 +177,7 @@
   background-color: $color-base;
 }
 .form-order__input:checked + .form-order__label--small-width::before{
-  background-color: red;
-  background:url("../img/icon-tick.svg");
+  background:url("../img/icon-tick.svg") no-repeat 50% 50%;
 }
 .form-order__input-text {
   display: inline-block;
@@ -175,6 +185,7 @@
   padding: 20px 0;
   border-style: none;
   border-bottom: 2px solid black;
+  font-size: 16px;
   &--tel {
     background: url("../img/icon-phone.svg") no-repeat 95% 50%;
   }
@@ -183,6 +194,7 @@
   }
   @media ($tablet) {
     width: 390px;
+    font-size: 18px;
     &--big-width{
       width: 430px;
     }
@@ -201,9 +213,14 @@
     }
   }
 }
+.form-order__label-text{
+  font-weight: bold;
+}
 .form-order__textarea{
   width: 260px;
   height: 140px;
+  margin-top: 30px;
+  font-size: 18px;
   @media ($tablet) {
     width: 500px;
     height: 140px;

@@ -209,16 +209,16 @@
 }
 
 .main-nav__text{
-  font-size: 15px;
-  margin-left: 490px;
-  margin-top: -40px;
   display: none;
   @media ($tablet){
     display: block;
+    font-size: 15px;
+    margin-left: 440px;
     margin-top: -55px;
   }
   @media ($desktop-min){
     margin-top: -45px;
+    margin-left: 800px;
   }
 }
 .main-nav__img{

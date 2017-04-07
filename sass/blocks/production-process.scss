@@ -1,7 +1,6 @@
 .production-process {
   width: 260px;
-  margin-left: 30px;
-  margin-bottom: 60px;
+  margin: 20px auto 60px;
   border: 1px solid #ececec;
   font-size: 14px;
   line-height: 150%;
@@ -52,6 +51,7 @@
   @media ($retina-dpi), ($retina-dppx) {
     background: url("../img/icon-play.svg") no-repeat 50% 50%, url("../img/video-mobile@2x.jpg");
   }
+
   @media ($tablet) {
     width: 668px;
     height: 455px;

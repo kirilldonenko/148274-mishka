@@ -7,7 +7,6 @@
     align-items: center;
     width: 768px;
     padding:70px 0;
-    border-bottom: 5px solid #f1f1f1;
     background: url("../img/review@1x.jpg") no-repeat;
     background-size: 350px 100%;
     @media ($retina-dpi), ($retina-dppx){
@@ -17,7 +16,7 @@
   }
   @media ($desktop-min){
     width: 1050px;
-    border-bottom: 5px solid #f1f1f1;
+
   }
 }
 .reviews__wrap{
@@ -88,11 +87,7 @@
   &--prev {
     background: url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
     border-right: 1px solid #ececec;
-    @media ($tablet) and ($desktop-max){
-      border-style: none;
-
-    }
-    @media ($desktop-min){
+    @media ($tablet){
       border-style: none;
     }
   }

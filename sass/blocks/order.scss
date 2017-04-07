@@ -1,8 +1,12 @@
 .order{
   display: inline-block;
+  vertical-align: middle;
 }
 .order__price{
   display: inline-block;
-  width: 243px;
-
+  vertical-align: middle;
+  width: 175px;
+  @media ($tablet){
+    width: 243px;
+  }
 }
