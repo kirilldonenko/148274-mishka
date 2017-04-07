@@ -117,7 +117,7 @@
       <a class="copyright__link" href="https://htmlacademy.ru">Разработано</a>
     </article>
   </footer>
-  <section class="modal visually-hidden">
+  <!--<section class="modal visually-hidden">
     <h2 class="modal__title">Добавить в корзину</h2>
     <p class="modal__text">Выберите размер:</p>
     <form class="form-modal" action="index.html" method="post">
@@ -129,38 +129,9 @@
       <input id="sizeL" class="form-modal__input" type="checkbox" name="size" value="L">
       <input class="form-modal__submit" type="submit" name="submit" value="Добавить">
     </form>
-  </section>
-  <script>
-    var mainNav = document.querySelector('.main-nav');
-    var toggle = document.querySelector('.main-nav__toggle');
-    mainNav.classList.remove('main-nav--nojs');
-    toggle.addEventListener('click', function() {
-      if (mainNav.classList.contains('main-nav--closed')) {
-        mainNav.classList.remove('main-nav--closed');
-        mainNav.classList.add('main-nav--opened');
-      } else {
-        mainNav.classList.add('main-nav--closed');
-        mainNav.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
-  <script>
-    var buttons = document.querySelectorAll(".order");
-    var modal = document.querySelector(".modal");
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener('click', function() {
-        modal.classList.remove('visually-hidden');
-      });
-    };
-    addEventListener('keydown', function(event) {
-      if (event.keyCode == 27) {
-        modal.classList.add('visually-hidden');
-      };
-    });
-    buttonSubmit.addEventListener('click', function() {
-      modal.classList.add('visually-hidden');
-    });
-  </script>
+  </section>-->
+  <!--<script src="js/javascript.js"></script>-->
+  <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js"></script>
 </body>
 
 </html>

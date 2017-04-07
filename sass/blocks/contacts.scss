@@ -6,11 +6,10 @@
   }
   @media ($desktop-min){
     width: 400px;
-    margin-left: -500px;
     padding-left: 100px;
     display: flex;
     flex-direction: column;
-  align-items: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
     background: url("../img/icon-flag.svg") no-repeat 40px 60px #ffffff;
   }
@@ -24,7 +23,7 @@
     font-size: 42px;
   }
   @media ($desktop-min){
-    width:460px;
+    width:375px;
     font-size: 42px;
     margin-top: 67px;
 
@@ -32,12 +31,14 @@
 }
 .contacts__write-to-us{
   margin: 30px ;
-  @media ($tablet) and ($desktop-max) {
+  @media ($tablet) {
     margin: 60px auto;
 
   }
   @media ($desktop-min){
-    margin-top: 37px;
-    margin-bottom: 0;
+    margin:0;
+    margin-left: 30px;
+    /*margin-top: 37px;
+    margin-bottom: 0;*/
   }
 }

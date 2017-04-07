@@ -7,6 +7,8 @@
   @media ($desktop-min){
     height: 460px;
     margin-bottom: 105px;
+    margin-left: 70px;
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

@@ -15,7 +15,7 @@
   }
   @media ($desktop-min){
     width: 525px;
-    margin-left: -320px;
+    align-self: flex-end;
     background: url("../img/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-desktop@1x.jpg") no-repeat 50% 50%;
     order: 5;
     @media ($retina-dpi), ($retina-dppx){

@@ -77,6 +77,11 @@
     padding: 0;
     order: -1;
   }
+  &:nth-of-type(4){
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 35px;
+  }
   &:nth-of-type(6),
   &:nth-of-type(7){
     display: none;
@@ -95,21 +100,19 @@
     }
     &:nth-of-type(3){
       margin-top: 20px;
-      margin-right: 210px;
+      margin-right: 220px;
     }
     &:nth-of-type(4) {
-      width:170px;
+      width: auto;
       padding: 0;
-      padding-left: 80px;
       border-left: 1px solid #ececec;
       order:0;
+      font-size: 0;
     }
     &:nth-of-type(5) {
-      width:180px;
-      margin-left: -165px;
-      padding-right: 0;
-      padding-left: 90px;
-      background-color: #ffffff;
+      width: 180px;
+      margin: 0;
+      padding: 34px 0 33px 80px;
       background-position: 35px 50%;
       border-left: 1px solid #ececec;
       order:1;
@@ -135,23 +138,15 @@
     }
     &:nth-of-type(3){
       margin-top: 10px;
+      margin-right: 95px;
       order:2;
     }
     &:nth-of-type(4){
-      margin-left: -115px;
-      padding: 30px;
-      padding-left: 85px;
-      border-left: 1px solid #ececec;
       order:3;
+      font-size: 0;
     }
     &:nth-of-type(5){
-      width:171px;
-      margin-left: -205px;
-      padding: 30px;
-      padding-left: 85px;
-      padding-right: 0;
-      background-color: #ffffff;
-      border-left: 1px solid #ececec;
+      width: 177px;
       order:4;
     }
     &:nth-of-type(6){
@@ -194,25 +189,25 @@
 }
 .main-nav__search{
   display: inline-block;
-  margin-left: -45px;
-  margin-right: 22px;
-  @media ($tablet) {
-    padding: 33px 0;
-    margin-right: 32px;
-    }
-  @media ($desktop-min){
-    margin: 0;
-    margin-left: -53px;
-    margin-right: 32px;
-    padding: 0;
+  vertical-align: middle;
+  margin-right: 20px;
+  @media ($tablet){
+    width: 20px;
+    height: 20px;
+    margin: 34px;
+  }
 
+}
+.main-nav__link{
+  text-decoration: none;
+  color: #000000;
+  @media ($tablet){
+    &--search{
+      font-size: 0;
+    }
   }
 }
-.main-nav__link {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
+
 .main-nav__text{
   font-size: 15px;
   margin-left: 490px;

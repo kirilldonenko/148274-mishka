@@ -56,7 +56,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    outline: 1px solid red;
+
   }
 }
 .form-order__wrap-color{
@@ -66,14 +66,12 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
-    outline: 1px solid red;
   }
   @media ($desktop-min){
     width: 730px;
   }
 }
 .form-order__wrap-bio{
-  outline: 1px solid red;
   @media ($tablet) {
     width: 500px;
     display: flex;
@@ -99,20 +97,77 @@
     width: 700px;
   }
 }
+.form-order__input{
+  display: none;
+  }
+
 .form-order__label {
+  display: inline-block;
   font-weight: bold;
-  @media ($tablet) {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    &--small-width{
-    width: 220px;
+  vertical-align: middle;
+  &::before{
+    content:"";
+    display: inline-block;
+    margin-right:  45px;
+    width: 15px;
+    height: 15px;
+    border-radius:50%;
+    background: #ffffff;
+    box-shadow:  0 0 0 13px #ffffff, 0 0 0 15px #717171,;
+    vertical-align: middle;
+  }
+  &::before:hover{
+    box-shadow:  0 0 0 14px #ffffff, 0 0 0 15px #717171;
+  }
+  /*&::before:active{
+    box-shadow:  0 0 0 14px #ffffff, 0 0 0 15px #d7d7d7;
+  }*/
+  &--small-width{
+    &::before{
+      content:"";
+      display: inline-block;
+      margin-right:  30px;
+      border-radius: 0;
+      box-shadow: none;
+      width: 40px;
+      height:40px;
+      background-color: #ffffff;
+      border: 2px solid #444444;
+      vertical-align: middle;
+    }
+    &::before:hover{
+      border: 1px solid $color-base;
+    }
+    &::before:active{
+      border: 1px solid #a59f9f;
     }
   }
+  @media ($tablet) {
+    margin: 20px;
+    &::before{
+      width: 20px;
+      height: 20px;
+    }
+    &--small-width{
+      width: 220px;
+      &::before{
+      width: 50px;
+      height:50px;
+      }
+    }
   @media ($desktop-min){
     &--small-width{
       width: 240px;
     }
   }
+}
+}
+.form-order__input:checked + .form-order__label::before {
+  background-color: $color-base;
+}
+.form-order__input:checked + .form-order__label--small-width::before{
+  background-color: red;
+  background:url("../img/icon-tick.svg");
 }
 .form-order__input-text {
   display: inline-block;

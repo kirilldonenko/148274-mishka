@@ -1,5 +1,6 @@
 .contacts-data {
   width: 320px;
+  color:#dadada;
   @media ($tablet) {
     width: 768px;
     display: flex;
@@ -7,6 +8,7 @@
     align-items: flex-start;
   }
   @media ($desktop-min){
+    width: 400px;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -16,6 +18,7 @@
   @media ($desktop-min){
   display: flex;
   flex-direction: row;
+  font-size: 18px;
 }
 }
 
@@ -23,32 +26,33 @@
   display: inline-block;
   width: 80px;
   margin-left: 30px;
-  font-size: 14px;
+  vertical-align: top;
 }
 
 .contacts-data__e-mail-link {
   display: inline-block;
+  vertical-align: top;
   width: 185px;
   margin-bottom: 40px;
-  font-size: 14px;
-  text-decoration: none;
-  color:#dadada;
-  border-bottom: $color-base;
 }
+.contacts-data__e-mail-link-a{
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid $color-base;
 
+}
 .contacts-data__adds {
   display: inline-block;
   width: 80px;
   vertical-align: top;
   margin-left: 30px;
-  font-size: 14px;
 }
 
 .contacts-data__address {
   display: inline-block;
   width: 150px;
   margin-bottom: 40px;
-  margin-top: -5px;
   font-size: 14px;
   line-height: 200%;
+  vertical-align: top;
 }
