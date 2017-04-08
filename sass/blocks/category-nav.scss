@@ -6,7 +6,8 @@
     display: flex;
     justify-content: center;
     background-color: #f9f9f9;
-    border-bottom: 1px solid black;
+    background: url("../img/bg-zigzag-line.svg") no-repeat 0 135%;
+    background-size: 100% 50%;
     position: relative;
     z-index: 5;
   }

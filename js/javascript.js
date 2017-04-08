@@ -15,13 +15,13 @@ toggle.addEventListener("click", function() {
 /* Активизация модального окна*/
 
 var modal = document.querySelector(".modal");
-var buttonOrder = document.querySelector(".product-of-week__order");
+/*var buttonOrder = document.querySelector(".product-of-week__order");*/
 var buttons = document.querySelectorAll(".order");
 var buttonSubmit = document.querySelector(".form-modal__submit");
 
-buttonOrder.addEventListener("click", function() {
+/*buttonOrder.addEventListener("click", function() {
   modal.classList.remove("visually-hidden");
-});
+});*/
 
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function() {
@@ -33,6 +33,7 @@ addEventListener("keydown", function() {
     modal.classList.add("visually-hidden");
   };
 });
-buttonSubmit.addEventListener("click", function() {
+buttonSubmit.addEventListener("click", function(event) {
+  event.preventDefault();
   modal.classList.add("visually-hidden");
 });
