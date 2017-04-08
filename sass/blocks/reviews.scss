@@ -37,7 +37,7 @@
 .reviews__title {
   font-size: 40px;
   @media ($tablet){
-    margin-top: -75px;
+    margin-top: -60px;
   }
   @media ($desktop-min){
     font-size: 54px;
@@ -52,9 +52,13 @@
   width: 260px;
   color: #696969;
   font-size: 16px;
-  line-height: 200%;
+  line-height: 180%;
   @media ($tablet) {
   width: 668px;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 17px;
+  margin-bottom: 55px;
   }
   @media ($desktop-min){
     width: 770px;
@@ -75,6 +79,9 @@
 
 .reviews__author-nickname {
   font-size: 16px;
+  @media ($tablet){
+    margin-bottom: 50px;
+  }
 }
 
 .reviews__toggle {
@@ -111,6 +118,7 @@
   @media ($tablet) {
     width: 175px;
     margin: 0;
+    margin-top: 80px;
     align-self: flex-end;
     order: -1;
   }

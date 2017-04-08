@@ -67,6 +67,7 @@
     justify-content: flex-start;
   }
 }
+
 .main-nav__item {
   padding: 25px 0;
   padding-left: 75px;
@@ -231,5 +232,12 @@
   @media ($desktop-min){
     width: 160px;
     height: 75px;
+  }
+}
+#li-desktop-new,
+#li-desktop-sale{
+  display:none;
+  @media ($desktop-min){
+    display:block;
   }
 }
