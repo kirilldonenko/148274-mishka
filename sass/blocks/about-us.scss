@@ -7,17 +7,19 @@
     width: 668px;
   }
   @media ($desktop-min) {
-    margin-left: -30px;
+    width: 700px;
     margin-top: 60px;
+    margin-bottom: 20px;
   }
 }
 .about-us__title {
   @media ($tablet) {
-    font-size: 40px;
+    font-size: 54px;
   }
 }
 
 .about-us__list {
+  font-weight: bold;
   list-style: none;
   @media ($tablet) {
     display: flex;
@@ -28,6 +30,10 @@
     width: 668px;
     padding: 0;
     font-size: 28px;
+  }
+  @media ($desktop-min){
+    width:700px;
+    height: 450px;
   }
 }
 
@@ -66,5 +72,9 @@
   &--present {
     width: 185px;
     background: url("../img/icon-feature-6.svg") no-repeat 10px 0;
+  }
+  @media ($desktop-min){
+    width: 340px;
+    font-size: 22px;
   }
 }

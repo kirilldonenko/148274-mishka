@@ -7,7 +7,7 @@
     align-items: center;
     width: 768px;
     margin-bottom: 50px;
-    padding:70px 0;
+    padding-top: 70px 0;
     background: url("../img/review@1x.jpg") no-repeat;
     background-size: 350px 100%;
     border-style: none;
@@ -18,7 +18,7 @@
   }
   @media ($desktop-min){
     width: 1050px;
-
+    padding:90px 0 70px;
   }
 }
 .reviews__wrap{
@@ -28,17 +28,20 @@
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
-
   }
   @media ($desktop-min){
-    width: 768px;
+    width: 875px;
     margin-left: 175px;
   }
 }
 .reviews__title {
   font-size: 40px;
   @media ($tablet){
-    margin-top: -55px;
+    margin-top: -75px;
+  }
+  @media ($desktop-min){
+    font-size: 54px;
+    margin-bottom: 25px;
   }
 }
 .reviews__item{
@@ -55,6 +58,8 @@
   }
   @media ($desktop-min){
     width: 770px;
+    margin-bottom: 20px;
+
   }
 }
 
@@ -62,6 +67,10 @@
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
+  @media ($desktop-min){
+    font-size: 20px;
+  }
+
 }
 
 .reviews__author-nickname {
@@ -104,5 +113,8 @@
     margin: 0;
     align-self: flex-end;
     order: -1;
+  }
+  @media ($desktop-min){
+
   }
 }
