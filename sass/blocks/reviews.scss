@@ -103,7 +103,7 @@
   padding: 10px 20px;
 
   &--prev {
-    background: url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
+    background: url("../img/icons/icon-left-arrow.svg") no-repeat 50% 50%;
     border-right: 1px solid #ececec;
     @media ($tablet){
       border-style: none;
@@ -111,7 +111,7 @@
   }
 
   &--next {
-    background: url("../img/icon-right-arrow.svg") no-repeat 50% 50%;
+    background: url("../img/icons/icon-right-arrow.svg") no-repeat 50% 50%;
   }
 }
 .reviews__write{

@@ -1,5 +1,8 @@
 .category-nav {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media ($tablet)  {
     margin-top: -165px;
     display: flex;
@@ -38,14 +41,14 @@
     margin-top: -5px;
   }
   &--interior {
-    background: url("../img/icon-interior.svg") no-repeat 87% 50% $color-base;
+    background: url("../img/icons/icon-interior.svg") no-repeat 87% 50% $color-base;
     &:active{
       color:#8be2d0;
     }
   }
 
   &--toy {
-    background: url("../img/icon-toy.svg") no-repeat 90% 50% #56c3b2;
+    background: url("../img/icons/icon-toy.svg") no-repeat 90% 50% #56c3b2;
     &:active{
       color:#7ed4c6;
     }

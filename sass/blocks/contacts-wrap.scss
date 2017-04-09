@@ -3,5 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../img/bg-zigzag-line.svg") repeat-x;
+  @media ($tablet){
+    background: url("../img/bg-zigzag-line.svg") repeat-x;
+  }
+
 }

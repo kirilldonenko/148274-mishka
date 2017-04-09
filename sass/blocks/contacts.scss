@@ -2,7 +2,7 @@
   width: 320px;
   @media ($tablet) {
     width: 768px;
-    background: url("../img/icon-flag.svg") no-repeat 670px 75px;
+    background: url("../img/icons/icon-flag.svg") no-repeat 670px 75px;
   }
   @media ($desktop-min){
     width: 950px;
@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
-    background: url("../img/icon-flag.svg") no-repeat 40px 60px;
+    background: url("../img/icons/icon-flag.svg") no-repeat 40px 60px;
   }
 }
 .contacts__title{

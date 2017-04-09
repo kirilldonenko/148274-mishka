@@ -37,7 +37,6 @@
 }
 
 .about-us__feature {
-  outline: 1px solid red;
   width: 260px;
   padding-top: 60px;
   padding-bottom: 35px;
@@ -45,39 +44,39 @@
   &--eco {
     width: 185px;
     padding-right: 75px;
-    background: url("../img/icon-feature-1.svg") no-repeat 10px 0;
+    background: url("../img/icons/icon-feature-1.svg") no-repeat 10px 0;
   }
 
   &--style {
     width: 195px;
     padding-right: 65px;
-    background: url("../img/icon-feature-3.svg") no-repeat 10px 0;
+    background: url("../img/icons/icon-feature-3.svg") no-repeat 10px 0;
   }
 
   &--likes {
     width: 185px;
     padding-right: 75px;
-    background: url("../img/icon-feature-5.svg") no-repeat 10px 0;
+    background: url("../img/icons/icon-feature-5.svg") no-repeat 10px 0;
 
   }
 
   &--hand-made {
     width: 200px;
     padding-right: 60px;
-    background: url("../img/icon-feature-2.svg") no-repeat 10px 0;
+    background: url("../img/icons/icon-feature-2.svg") no-repeat 10px 0;
 
   }
 
   &--russia {
     width: 240px;
     padding-right: 20px;
-    background: url("../img/icon-feature-4.svg") no-repeat 10px 0;
+    background: url("../img/icons/icon-feature-4.svg") no-repeat 10px 0;
   }
 
   &--present {
     width: 195px;
     padding-right: 65px;
-    background: url("../img/icon-feature-6.svg") no-repeat 10px 0;
+    background: url("../img/icons/icon-feature-6.svg") no-repeat 10px 0;
   }
 
   @media ($tablet){

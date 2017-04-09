@@ -1,14 +1,18 @@
 .catalog-title {
   width: 100%;
-  margin-top: -62px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: url("../img/bg-zigzag-fill.svg") no-repeat 0 200% #f1f1f1;
-  background-size: 100% 70%;
+  background-color: #f1f1f1;
+  @media ($tablet){
+    margin-top: -62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../img/bg-zigzag-fill.svg") no-repeat 0 200% #f1f1f1;
+    background-size: 100% 70%;
+  }
 }
 
 .catalog-title__wrap {
+  margin: 0 auto;
   @include container-big;
   display: flex;
   flex-direction: column;
@@ -16,8 +20,6 @@
   @media ($tablet) {
     margin: 0;
     padding-top: 20px;
-    position: relative;
-    z-index: 0;
   }
 }
 

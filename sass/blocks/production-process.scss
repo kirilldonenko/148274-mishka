@@ -25,14 +25,14 @@
   width: 120px;
   margin: 30px 30px 30px 20px;
   padding-left: 80px;
-  background: url("../img/icon-video.svg") no-repeat 10% 50%;
+  background: url("../img/icons/icon-video.svg") no-repeat 10% 50%;
   @media ($tablet) {
     width: 505px;
     margin-top: 50px;
     margin-bottom: 50px;
     padding-left: 80px;
     font-size: 22px;
-    background: url("../img/icon-video.svg") no-repeat 0 50%;
+    background: url("../img/icons/icon-video.svg") no-repeat 0 50%;
   }
   @media ($desktop-min) {
     width: 155px;
@@ -40,16 +40,16 @@
     margin: 50px 0;
     margin-right:  140px;
     padding: 60px 0 0;
-    background: url("../img/icon-video.svg") no-repeat 0 0;
+    background: url("../img/icons/icon-video.svg") no-repeat 0 0;
   }
 }
 
 .production-process__video {
   width: 260px;
   height: 150px;
-  background: url("../img/icon-play.svg") no-repeat 50% 50%, url("../img/video-mobile@1x.jpg");
+  background: url("../img/icons/icon-play.svg") no-repeat 50% 50%, url("../img/video-mobile@1x.jpg");
   @media ($retina-dpi), ($retina-dppx) {
-    background: url("../img/icon-play.svg") no-repeat 50% 50%, url("../img/video-mobile@2x.jpg");
+    background: url("../img/icons/icon-play.svg") no-repeat 50% 50%, url("../img/video-mobile@2x.jpg");
   }
 
   @media ($tablet) {
@@ -57,9 +57,9 @@
     height: 455px;
     order: -1;
     border-bottom: 1px solid #fafafa;
-    background: url("../img/icon-play.svg") no-repeat 50% 50%, url("../img/video-tablet@1x.jpg");
+    background: url("../img/icons/icon-play.svg") no-repeat 50% 50%, url("../img/video-tablet@1x.jpg");
     @media ($retina-dpi), ($retina-dppx) {
-      background: url("../img/icon-play.svg") no-repeat 50% 50%, url("../img/video-tablet@2x.jpg");
+      background: url("../img/icons/icon-play.svg") no-repeat 50% 50%, url("../img/video-tablet@2x.jpg");
     }
   }
     @media ($desktop-min) {
@@ -68,9 +68,9 @@
       margin-top: -415px;
       order: 10;
       align-self: flex-start;
-      background: url("../img/icon-play.svg") no-repeat 50% 50%, url("../img/video-desktop@1x.jpg");
+      background: url("../img/icons/icon-play.svg") no-repeat 50% 50%, url("../img/video-desktop@1x.jpg");
       @media ($retina-dpi), ($retina-dppx) {
-        background: url("../img/icon-play.svg") no-repeat 50% 50%, url("../img/video-desktop@2x.jpg");
+        background: url("../img/icons/icon-play.svg") no-repeat 50% 50%, url("../img/video-desktop@2x.jpg");
       }
     }
 }
