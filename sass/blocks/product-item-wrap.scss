@@ -1,7 +1,9 @@
 .product-item-wrap{
-  width: 320px;
+  @include container-small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media ($desktop-min){
-    width: 1050px;
     margin-top: 130px;
     display: flex;
     flex-direction: row;

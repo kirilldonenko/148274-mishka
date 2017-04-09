@@ -1,18 +1,7 @@
 .contacts-wrap{
-  @media ($tablet) {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin-top: 20px;
-
-  }
-  @media ($desktop-min){
-    height: 600px;
-    margin-left: 70px;
-    align-self: flex-start;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../img/bg-zigzag-line.svg") repeat-x;
 }

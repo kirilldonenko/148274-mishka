@@ -1,9 +1,9 @@
 .page-header {
-  width: 320px;
-  @media ($tablet) and ($desktop-max) {
-    width: 768px;
-  }
-  @media ($desktop-min) {
-    width: 1050px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.page-header__wrap{
+  @include container-small;
 }

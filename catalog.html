@@ -36,10 +36,14 @@
       <p class="main-nav__text">Бесплатная доставка по России</p>
     </nav>
   </header>
-  <article class="catalog">
-    <div class="catalog__wrap-title">
-      <h2 class="catalog__title">Каталог товаров</h2>
+
+    <div class="catalog-title">
+      <div class="catalog-title__wrap">
+        <h2 class="catalog-title__text">Каталог товаров</h2>
+      </div>
     </div>
+
+    <article class="catalog">
     <div class="product-item-wrap">
       <figure class="product-item">
         <div class="product-item__img-wrap">
@@ -79,7 +83,7 @@
             Диаметр 15 см, высота 10 см</div>
         </div>
         <div class="product-item__price"><span class="order__price">690 руб.</span>
-          <a  class="order" href="#"><svg class="order__cart-svg">
+          <a class="order" href="#"><svg class="order__cart-svg">
             <use class="order__cart-use"   xlink:href="img/symbols.svg#icon-cart"></use>
           </svg></a>
         </div>
@@ -99,7 +103,7 @@
             Диаметр 30 см, высота 30 см</div>
         </div>
         <div class="product-item__price"><span class="order__price">1500 руб.</span>
-          <a  class="order" href="#"><svg class="order__cart-svg">
+          <a class="order" href="#"><svg class="order__cart-svg">
             <use class="order__cart-use"   xlink:href="img/symbols.svg#icon-cart"></use>
           </svg></a>
         </div>
@@ -118,15 +122,19 @@
     <a class="production-process__order btn" href="form.html">Сделать заказ</a>
   </section>
   <footer class="page-footer">
-    <a href="index.html"><img class="page-footer__logo" src="./img/logo-footer.svg" alt="Mishka"></a>
-    <article class="social">
-      <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
-      <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
-      <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru"></a>
-    </article>
-    <article class="copyright">
+    <div class="page-footer__wrap">
+      <a href="index.html">
+        <img class="page-footer__logo" src="./img/logo-footer.svg" alt="Mishka">
+      </a>
+      <article class="social">
+        <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
+        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
+        <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru"></a>
+      </article>
+      <article class="copyright">
       <a class="copyright__link" href="https://htmlacademy.ru">Разработано</a>
-    </article>
+      </article>
+    </div>
   </footer>
   <section class="modal visually-hidden">
     <h2 class="modal__title">Добавить в корзину</h2>

@@ -9,13 +9,14 @@
 .page-footer__wrap{
 
   @media ($tablet) {
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
     @media ($desktop-min){
     }
-    @include container;
+    @include container-small;
 }
 .page-footer__logo{
   display: none;
