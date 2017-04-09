@@ -25,7 +25,11 @@
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--search" href="#"><img class="main-nav__search" src="img/icon-search.svg" width="20" height="20" alt="Поиск">Поиск по сайту</a>
+          <a class="main-nav__link main-nav__link--search" href="#">
+            <svg class="main-nav__search-svg">
+              <use class="main-nav__search-use"   xlink:href="img/symbols.svg#icon-search"></use>
+            </svg>
+            Поиск по сайту</a>
         </li>
         <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a></li>
         <li class="main-nav__item" id="li-desktop-new"><a class="main-nav__link" href="#">Новые поступления</a></li>
@@ -139,7 +143,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrap">
-        <a href="index.html"><img class="page-footer__logo" src="./img/logo-footer.svg" alt="Mishka"></a>
+        <a href="index.html">
+          <img class="page-footer__logo" src="./img/logo-footer.svg" alt="Mishka">
+        </a>
         <article class="social">
           <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
           <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>

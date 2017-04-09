@@ -188,13 +188,13 @@
     background: url("../img/icon-cart.svg") no-repeat 35px 50%;
   }
 }
-.main-nav__search{
+.main-nav__search-svg{
+  width: 20px;
+  height: 20px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 20px;
   @media ($tablet){
-    width: 20px;
-    height: 20px;
     margin: 34px;
   }
 
@@ -203,6 +203,9 @@
   text-decoration: none;
   color: #000000;
   @media ($tablet){
+    &--search:hover .main-nav__search-svg .main-nav__search-use{
+      fill:$color-base;
+    }
     &--search{
       font-size: 0;
     }
