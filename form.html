@@ -9,14 +9,14 @@
 </head>
 
 <body class="page">
-  <header class="page-header">
+  <header class="page__header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--order" href="form.html">Вязание на заказ</a></li>
         <li class="main-nav__item main-nav__item--logo">
-          <a href="index.html">
+          <a class="main-nav__link--logo" href="index.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -25,13 +25,14 @@
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--search" href="#"><svg class="main-nav__search-svg">
-            <use class="main-nav__search-use"   xlink:href="img/symbols.svg#icon-search"></use>
-          </svg>Поиск по сайту</a>
+          <a class="main-nav__link main-nav__link--search" href="#">
+            <svg class="main-nav__search-svg">
+              <use class="main-nav__search-use"   xlink:href="img/symbols.svg#icon-search"></use>
+            </svg>Поиск по сайту</a>
         </li>
         <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a></li>
-        <li class="main-nav__item" id="li-desktop-new"><a class="main-nav__link" href="#">Новые поступления</a></li>
-        <li class="main-nav__item" id="li-desktop-sale"><a class="main-nav__link" href="#">Распродажа</a></li>
+        <li class="main-nav__item" id="li-desktop-new"><a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a></li>
+        <li class="main-nav__item" id="li-desktop-sale"><a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a></li>
       </ul>
       <p class="main-nav__text">Бесплатная доставка по России</p>
     </nav>
@@ -100,15 +101,19 @@
     </form>
   </section>
   <footer class="page-footer">
-    <a href="index.html"><img class="page-footer__logo" src="./img/logo-footer.svg" alt="Mishka"></a>
-    <article class="social">
-      <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
-      <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
-      <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru"></a>
-    </article>
-    <article class="copyright">
-    <a class="copyright__link" href="https://htmlacademy.ru">Разработано</a>
-    </article>
+    <div class="page-footer__wrap">
+      <a href="index.html">
+        <img class="page-footer__logo" src="./img/logo-footer.svg" width="100" height="35" alt="Mishka">
+      </a>
+      <article class="social">
+        <a class="social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
+        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
+        <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy_ru"></a>
+      </article>
+      <article class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru">Разработано</a>
+      </article>
+    </div>
   </footer>
   <script src="js/javascript.js"></script>
   <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js"></script>

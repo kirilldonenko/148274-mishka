@@ -200,9 +200,28 @@
 .main-nav__link{
   text-decoration: none;
   color: #000000;
+  &--catalog:hover,
+  &--order:hover,
+  &--cart:hover,
+  &--logo:hover,
+  &--new:hover,
+  &--sale:hover{
+    opacity: 0.75;
+  }
+  &--catalog:active,
+  &--order:active,
+  &--cart:active,
+  &--logo:active,
+  &--new:active,
+  &--sale:active{
+    opacity: 0.5;
+  }
   @media ($tablet){
     &--search:hover .main-nav__search-svg .main-nav__search-use{
       fill:$color-base;
+    }
+    &--search:active .main-nav__search-svg .main-nav__search-use{
+      opacity: 0.5;
     }
     &--search{
       font-size: 0;

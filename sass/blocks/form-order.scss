@@ -168,7 +168,17 @@
 }
 .form-order__input{
   display: none;
+  &:hover{
+    .form-order__label::before{
+      box-shadow:  0 0 0 14px #ffffff, 0 0 0 15px $color-base;
+    }
   }
+  &:active{
+    .form-order__label::before{
+      box-shadow:  0 0 0 14px #ffffff, 0 0 0 15px #c7c7c7;
+    }
+  }
+}
 
 .form-order__label {
   display: inline-block;
@@ -187,15 +197,7 @@
     height: 15px;
     border-radius:50%;
     background-color: #ffffff;
-    box-shadow:  0 0 0 13px #ffffff, 0 0 0 15px #717171,;
-  }
-
-
-  &::before:hover{
-    box-shadow:  0 0 0 14px #ffffff, 0 0 0 15px #717171;
-  }
-  &::before:active{
-    box-shadow:  0 0 0 14px #ffffff, 0 0 0 15px #d7d7d7;
+    box-shadow:  0 0 0 13px #ffffff, 0 0 0 15px #444444;
   }
   &--small-width{
     &::before{
@@ -206,7 +208,6 @@
       box-shadow: none;
       width: 40px;
       height:40px;
-
       border: 2px solid #444444;
       vertical-align: middle;
     }
@@ -214,7 +215,7 @@
       border: 1px solid $color-base;
     }
     &::before:active{
-      border: 1px solid #a59f9f;
+      border: 1px solid #c7c7c7;
     }
   }
   @media ($tablet) {
@@ -254,8 +255,14 @@
   width: 260px;
   padding: 20px 0;
   border-style: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000000;
   font-size: 16px;
+  &:hover{
+    border-bottom: 2px solid $color-base;
+  }
+  &:active{
+
+  }
   &--tel {
     background: url("../img/icon-phone.svg") no-repeat 95% 50%;
   }
@@ -291,6 +298,9 @@
   height: 140px;
   margin-top: 30px;
   font-size: 18px;
+  &:hover{
+    border: 2px solid $color-base;
+  }
   @media ($tablet) {
     width: 500px;
     height: 140px;

@@ -18,6 +18,9 @@
     }
     @include container-small;
 }
+.page-footer__link-logo:hover{
+
+}
 .page-footer__logo{
   display: none;
   @media ($tablet){
