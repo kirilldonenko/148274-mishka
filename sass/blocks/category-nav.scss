@@ -24,14 +24,16 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  font-size: 16px;
+  font-size: 18px;
   @media ($tablet) {
     display: flex;
     flex-direction: row;
     width: 668px;
+    font-size: 20px;
   }
   @media ($desktop-min) {
     width: 1050px;
+    font-size: 22px;
   }
 }
 

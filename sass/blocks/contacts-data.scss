@@ -1,6 +1,6 @@
 .contacts-data {
   width: 320px;
-  color:#dadada;
+  color:#767676;
   font-size: 16px;
   @media ($tablet) {
     width: 768px;
@@ -39,8 +39,8 @@
 .contacts-data__e-mail-link-a{
   display: block;
   text-decoration: none;
+  color: #767676;
   border-bottom: 1px solid $color-base;
-  color:#a8a8a8;
   &:hover{
     color:$color-base;
   }
