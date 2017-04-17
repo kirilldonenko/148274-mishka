@@ -1,0 +1,77 @@
+.features{
+  width: 260px;
+  padding: 0;
+  margin: 0 auto;
+  @media ($tablet) {
+    width: 668px;
+  }
+  @media ($desktop-min) {
+    width: 700px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+}
+.features__title {
+  @media ($tablet) {
+    font-size: 54px;
+  }
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  list-style: none;
+  @media ($tablet) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 668px;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+  }
+  @media ($desktop-min){
+    width:700px;
+  }
+}
+
+.features__item {
+  width: 260px;
+  padding-top: 60px;
+  padding-bottom: 35px;
+  font-size: 16px;
+
+  @media ($tablet){
+    width: 334px;
+    margin-bottom: 30px;
+    padding: 60px 0;
+    font-size: 20px;
+    line-height: 100%;
+    &--eco{
+      order:0;
+    }
+    &--style{
+      order: 2;
+    }
+    &--likes{
+      order:4;
+    }
+    &--hand-made{
+      order:1;
+    }
+    &--russia{
+      order:3;
+    }
+    &--present{
+      order:5;
+    }
+  }
+  @media ($desktop-min){
+    font-size: 22px;
+  }
+}
+.features__icon{
+  display: block;
+}

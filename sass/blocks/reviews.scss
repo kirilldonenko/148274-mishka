@@ -84,7 +84,7 @@
   }
 }
 
-.reviews__toggle {
+.reviews__pagination {
   display: flex;
   width: 260px;
   border: 1px solid #ececec;
@@ -121,8 +121,5 @@
     margin-top: 80px;
     align-self: flex-end;
     order: -1;
-  }
-  @media ($desktop-min){
-
   }
 }
