@@ -14,13 +14,8 @@
     justify-content: space-between;
     align-items: center;
   }
-    @media ($desktop-min){
-    }
-    @include container-small;
 }
-.page-footer__link-logo:hover{
 
-}
 .page-footer__logo{
   display: none;
   @media ($tablet){

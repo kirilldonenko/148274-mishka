@@ -1,5 +1,4 @@
 .contacts-flex{
-  @include container-small;
   @media ($tablet) {
     display: flex;
     flex-direction: row;
