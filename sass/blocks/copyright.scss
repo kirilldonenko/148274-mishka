@@ -1,17 +1,30 @@
 .copyright {
-  margin: 25px 130px 25px 70px;
-  @media ($tablet){
-    margin: 0;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__link {
-  width: 170px;
-  height: 35px;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: bold;
+  display: block;
+  margin-right: 10px;
+  width: 127px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
   text-decoration: none;
-  color: black;
-  background: url("../img/logo-htmlacademy.svg") no-repeat 100% 0;
+  color: $text-color;
+}
+;
+.copyright__logo {
+  margin-top: 12px;
+  text-decoration: none;
+  fill: $brand-color--light;
+
+  &:hover {
+    fill: $brand-color--darken;
+  }
+
+  &:active {
+    fill: rgba($brand-color--darken, 0.3);
+  }
 }

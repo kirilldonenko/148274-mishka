@@ -1,54 +1,65 @@
 .features{
-  width: 260px;
-  padding: 0;
-  margin: 0 auto;
+  @include container;
+  padding-top: 28px;
+  padding-bottom: 25px;
   @media ($tablet) {
-    width: 668px;
+    padding-top: 50px;
+    padding-bottom: 78px;
   }
   @media ($desktop-min) {
     width: 700px;
-    margin-top: 60px;
-    margin-bottom: 20px;
+    padding-top: 59px;
+    padding-bottom: 60px;
   }
 }
 .features__title {
+  margin: 0;
+  margin-bottom: 3px;
+  font-size: 25px;
+  line-height: 30px;
+  color: $text-color;
   @media ($tablet) {
-    font-size: 54px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media ($desktop-min) {
+    padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
 .features__list {
   margin: 0;
   padding: 0;
-  font-weight: bold;
   list-style: none;
   @media ($tablet) {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 668px;
-    margin: 0;
-    padding: 0;
-    font-size: 28px;
+    margin-top: -7px;
   }
   @media ($desktop-min){
-    width:700px;
+    width: 700px;
+    margin-top: -10px;
+    padding-left: 175px;
   }
 }
 
 .features__item {
-  width: 260px;
-  padding-top: 60px;
-  padding-bottom: 35px;
-  font-size: 16px;
-
+  position: relative;
+  padding-top: 83px;
+  line-height: 20px;
+  color: $text-color;
+  font-size: 17px;
+  font-weight: bold;
   @media ($tablet){
-    width: 334px;
-    margin-bottom: 30px;
-    padding: 60px 0;
+    width: 314px;
+    padding-top: 110px;
+    padding-right: 20px;
     font-size: 20px;
-    line-height: 100%;
+    line-height: 22px;
     &--eco{
       order:0;
     }
@@ -69,9 +80,63 @@
     }
   }
   @media ($desktop-min){
-    font-size: 22px;
+    width: 330px;
+    padding-top: 112px;
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 .features__icon{
-  display: block;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  fill: $brand-color--light;
+
+  &--eco {
+    top: 29px;
+    left: 6px;
+  }
+
+  &--likes {
+    top: 35px;
+    left: 6px;
+  }
+
+  &--hand-made {
+    left: 2px;
+  }
+
+  &--russia {
+    top: 34px;
+    left: -7px;
+  }
+
+  &--present {
+    left: 2px;
+  }
+  @media ($tablet) {
+    top: 57px;
+
+    &--likes {
+      top: 62px;
+    }
+
+    &--russia {
+      top: 59px;
+    }
+  }
+  @media ($desktop-min) {
+    top: 60px;
+
+    &--eco {
+      top: 58px;
+      left: 10px;
+    }
+
+    &--likes {
+      top: 62px;
+      left: 8px;
+    }
+  }
 }

@@ -1,42 +1,173 @@
-.contacts{
-  width: 320px;
+.contacts {
+  @include container;
+  padding-top: 35px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 30px;
+  color: $text-color--muted;
   @media ($tablet) {
-    width: 768px;
-    background: url("../img/icons/icon-flag.svg") no-repeat 670px 75px;
+    padding-top: 62px;
+    padding-bottom: 57px;
+    font-size: 17px;
+    line-height: 30px;
   }
-  @media ($desktop-min){
-    width: 950px;
-    padding-left: 100px;
+  @media ($desktop-min) {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    background: url("../img/icons/icon-flag.svg") no-repeat 40px 60px;
+    padding-top: 70px;
+    padding-bottom: 105px;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
-.contacts__title{
-  margin-left: 30px;
-  margin-bottom: 40px;
-  @media ($tablet) {
-    width: 668px;
-    padding: 30px 0px 15px;
-    font-size: 42px;
-  }
-  @media ($desktop-min){
-    width:375px;
-    margin-top: 67px;
-    margin-bottom: 0;
-  }
-}
-.contacts__write-to-us{
-  margin: 30px ;
-  @media ($tablet) {
-    margin: 60px auto;
 
+.contacts__data {
+  @media ($desktop-min) {
+    width: 300px;
+    margin-top: 70px;
+    margin-left: 175px;
+    margin-bottom: 48px;
   }
-  @media ($desktop-min){
-    margin:0;
-    margin-top: -30px;
-    margin-left: 30px;
+}
+
+.contacts__title {
+  position: relative;
+  margin: 0 0 27px;
+  font-size: 18px;
+  font-weight: bold;
+  color: $text-color;
+  @media ($tablet) {
+    width: 600px;
+    margin-bottom: 48px;
+    font-size: 43px;
+    line-height: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      right: -65px;
+      width: 47px;
+      height: 82px;
+      background: url('../img/icon-flag.svg');
+    }
+  }
+  @media ($desktop-min) {
+    width: 300px;
+    margin-bottom: 50px;
+    font-size: 53px;
+    line-height: 57px;
+
+    &::before {
+      top: -8px;
+      left: -112px;
+    }
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @media ($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.contacts__item {
+  display: flex;
+  margin-bottom: 30px;
+  @media ($tablet) {
+    width: 315px;
+    margin: 0;
+    padding-right: 17px;
+  }
+  @media ($desktop-min) {
+    width: 334px;
+  }
+}
+.shop-contacts__value {
+  padding-left: 30px;
+  @media ($tablet) {
+    padding-left: 25px;
+  }
+}
+.contacts__link {
+  padding-bottom: 3px;
+  text-decoration: none;
+  color: $text-color--muted;
+  border-bottom: 1px solid $brand-color;
+
+  &:hover {
+    color: $brand-color--darken;
+  }
+
+  &:active {
+    opacity: 0.3
+  }
+}
+.contacts__map {
+  width: 320px;
+  height: 457px;
+  position: relative;
+  margin-top: 37px;
+  margin-left: -30px;
+  margin-bottom: 38px;
+  background: $bg-color url('../img/map-mobile@1x.jpg') no-repeat center;
+  @media ($retina-dpi), ($retina-dppx) {
+    background: $bg-color url('../img/map-mobile@2x.jpg') no-repeat center;
+    background-size: 320px auto;
+    }
+  @media ($tablet) {
+    width: 768px;
+    margin-top: 55px;
+    margin-left: -50px;
+    margin-bottom: 55px;
+    background: $bg-color url('../img/map-tablet@1x.jpg') no-repeat center;
+    @media ($retina-dpi), ($retina-dppx) {
+      background: $bg-color url('../img/map-tablet@2x.jpg') no-repeat center;
+      background-size: 768px auto;
+      }
+  }
+  @media ($desktop-min) {
+    width: 525px;
+    height: 460px;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    margin: 0;
+    background: $bg-color url('../img/map-desktop@1x.jpg') no-repeat center;
+
+    @media ($retina-dpi), ($retina-dppx) {
+      background: $bg-color url('../img/map-desktop@2x.jpg') no-repeat center;
+      background-size: 525px auto;
+    }
+  }
+}
+.contacts__map-pin {
+  width: 66px;
+  height: 100px;
+  position: absolute;
+  top: 166px;
+  left: 123px;
+  background: url('../img/icon-map-pin.svg');
+
+  @media ($tablet) {
+    left: 347px;
+  }
+
+  @media ($desktop-min) {
+    left: 237px;
+  }
+}
+
+.contacts__write-to-us {
+  @media ($tablet) {
+    width: 230px;
+    margin: 0 auto;
+  }
+  @media ($desktop-min) {
+    margin-left: 175px;
   }
 }

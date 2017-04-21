@@ -1,25 +1,25 @@
 .map{
   width: 320px;
   height: 460px;
-  background: url("../img/icons/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-mobile@1x.jpg") no-repeat 50% 50%;
+  background: url("../img/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-mobile@1x.jpg") no-repeat 50% 50%;
   @media ($retina-dpi), ($retina-dppx){
-    background: url("../img/icons/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-mobile@2x.jpg") no-repeat 50% 50%;
+    background: url("../img/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-mobile@2x.jpg") no-repeat 50% 50%;
   }
 
   @media ($tablet) {
     width: 768px;
-    background: url("../img/icons/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-tablet@1x.jpg") no-repeat 50% 50%;
+    background: url("../img/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-tablet@1x.jpg") no-repeat 50% 50%;
     @media ($retina-dpi), ($retina-dppx){
-      background: url("../img/icons/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-tablet@2x.jpg") no-repeat 50% 50%;
+      background: url("../img/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-tablet@2x.jpg") no-repeat 50% 50%;
     }
   }
   @media ($desktop-min){
     width: 525px;
     align-self: flex-end;
-    background: url("../img/icons/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-desktop@1x.jpg") no-repeat 50% 50%;
+    background: url("../img/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-desktop@1x.jpg") no-repeat 50% 50%;
     order: 5;
     @media ($retina-dpi), ($retina-dppx){
-      background: url("../img/icons/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-desktop@2x.jpg") no-repeat 50% 50%;
+      background: url("../img/icon-map-pin.svg") no-repeat 50% 50%, url("../img/map-desktop@2x.jpg") no-repeat 50% 50%;
     }
   }
 }

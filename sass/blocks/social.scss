@@ -1,9 +1,27 @@
-.social{
-  width: 200px;
-  margin: 0 auto;
-  padding:10px 60px;
-  border-bottom: 1px solid #e5e5e5;
-  @media ($tablet){
-    border-style: none;
+.social {
+  padding: 24px 22px 22px 57px;
+  display: flex;
+  align-items: center;
+  width: 175px;
+  @media ($tablet) {
+    margin-top: 7px;
+    margin-left: 115px;
+  }
+
+  @media ($desktop-min) {
+    margin-left: 285px;
+  }
+}
+
+.social__btn {
+  margin-right: 40px;
+  text-decoration: none;
+
+  &:hover {
+    fill: $brand-color--darken;
+  }
+
+  &:active {
+    fill: rgba($brand-color--darken, 0.3);
   }
 }
