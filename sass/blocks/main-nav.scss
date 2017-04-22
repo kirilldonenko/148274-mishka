@@ -1,6 +1,5 @@
 .main-nav {
-  width: 260px;
-  margin: 0 auto;
+  @include container;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -137,7 +136,7 @@
     }
     &:nth-of-type(3){
       margin-top: 20px;
-      margin-right: 220px;
+      margin-right: 200px;
     }
     &:nth-of-type(4) {
       width: auto;
@@ -171,7 +170,7 @@
     }
     &:nth-of-type(3){
       margin-top: 10px;
-      margin-right: 95px;
+      margin-right: 84px;
       order:2;
     }
     &:nth-of-type(4){
@@ -179,7 +178,6 @@
       font-size: 0;
     }
     &:nth-of-type(5){
-      width: 177px;
       order:4;
     }
     &:nth-of-type(6){
@@ -251,15 +249,15 @@
 .main-nav__text{
   display: none;
   @media ($tablet){
-    width: 235px;
+    width: 231px;
     position: absolute;
     top:110px;
-    left:255px;
+    right: 50px;
     display: block;
     font-size: 15px;
   }
   @media ($desktop-min){
-    margin-top: -45px;
+    margin-top: -5px;
     margin-left: 800px;
   }
 }

@@ -87,7 +87,7 @@
     width: 334px;
   }
 }
-.shop-contacts__value {
+.contacts__value {
   padding-left: 30px;
   @media ($tablet) {
     padding-left: 25px;
@@ -168,6 +168,7 @@
     margin: 0 auto;
   }
   @media ($desktop-min) {
-    margin-left: 175px;
+    margin-left: 0;
+    margin-top: 72px;
   }
 }

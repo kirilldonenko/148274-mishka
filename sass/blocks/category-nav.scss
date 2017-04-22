@@ -6,13 +6,13 @@
   background-color: $bg-color;
   border-top: 1px solid #ececec;
   @media ($tablet)  {
-    margin-top: -102px;
+    margin-top: -82px;
     display: flex;
     justify-content: center;
     &::after {
       content: "";
       position: absolute;
-      bottom: -228px;
+      bottom: -511px;
       left: 0;
       display: block;
       width: 100%;
@@ -24,7 +24,7 @@
   }
   @media ($desktop-min) {
     &::after {
-      bottom: -246px;
+      bottom: -492px;
     }
   }
 }
@@ -112,7 +112,7 @@
 
   }
   @media ($desktop-min){
-    padding-right: 370px;
+    padding-right: 377px;
   }
 }
 

@@ -35,8 +35,12 @@
     align-items: flex-start;
   }
   @media ($desktop-min) {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 .product-of-week__wrap {
@@ -46,13 +50,14 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
   @media ($desktop-min) {
     width: 715px;
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -146,9 +151,8 @@
     width: 335px;
     height: 405px;
     position: absolute;
-    top: -10px;
-    left:333px;
-
+    top: 78px;
+    right: 50px;
   }
   @media ($desktop-min) {
     width: 525px;
