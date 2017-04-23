@@ -101,18 +101,41 @@
     </form>
   </section>
   <footer class="page-footer">
-    <div class="page-footer__wrap">
-      <a href="index.html">
-        <img class="page-footer__logo" src="./img/logo-footer.svg" width="100" height="35" alt="Mishka">
+    <div class="page-footer__inner">
+      <a class="page-footer__logo" href="index.html" title="Главная">
+        <svg width="102" height="34">
+            <use xlink:href="#footer-logo"/>
+          </svg>
       </a>
-      <article class="social">
-        <a class="link social-link social-link--insta" href="https://www.instagram.com/htmlacademy"></a>
-        <a class="link social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
-        <a class="link social-link social-link--tw" href="https://twitter.com/htmlacademy_ru"></a>
-      </article>
-      <article class="copyright">
-        <a class="link copyright__link" href="https://htmlacademy.ru">Разработано</a>
-      </article>
+      <div class="social">
+        <a class="social__btn" href="#">
+          <span class="visually-hidden">Инстаграм</span>
+          <svg width="22" height="21">
+              <use xlink:href="#instagram"/>
+            </svg>
+        </a>
+        <a class="social__btn" href="#">
+          <span class="visually-hidden">Фейсбук</span>
+          <svg width="15" height="28">
+              <use xlink:href="#facebook"/>
+            </svg>
+        </a>
+        <a class="social__btn" href="#">
+          <span class="visually-hidden">Твиттер</span>
+          <svg width="23" height="20">
+              <use xlink:href="#twitter"/>
+            </svg>
+        </a>
+      </div>
+      <div class="copyright  page-footer__copyright">
+        <a class="copyright__link" href="#">Разработано</a>
+        <a class="copyright__logo" href="https://htmlacademy.ru">
+          <span class="visually-hidden">Html Academy</span>
+          <svg width="27" height="34">
+            <use xlink:href="#htmlacademy"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
   <script src="js/javascript.js"></script>

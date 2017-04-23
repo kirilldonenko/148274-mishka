@@ -6,13 +6,12 @@
   background-color: $bg-color;
   border-top: 1px solid #ececec;
   @media ($tablet)  {
-    margin-top: -82px;
+    margin-top: -102px;
     display: flex;
     justify-content: center;
     &::after {
       content: "";
-      position: absolute;
-      bottom: -511px;
+      position: relative;
       left: 0;
       display: block;
       width: 100%;
@@ -23,9 +22,7 @@
     }
   }
   @media ($desktop-min) {
-    &::after {
-      bottom: -492px;
-    }
+    margin-top: -81px;
   }
 }
 .category-nav__inner {
@@ -38,8 +35,8 @@
     background-size:575px auto;
   }
   @media ($tablet) {
-
-      height: 746px;
+      margin-bottom: -14px;
+      height: 747px;
       background: url('../img/hero-desktop@1x.jpg') no-repeat 50% 100% $bg-color;
 
       @media ($retina-dpi), ($retina-dppx) {
