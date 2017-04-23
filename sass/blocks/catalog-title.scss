@@ -21,7 +21,10 @@
     }
   }
   @media ($desktop-min) {
+    margin-top: -82px;
+    &::after {
     height: 17px;
+    }
   }
 }
 

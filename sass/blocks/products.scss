@@ -1,0 +1,9 @@
+.products{
+  @include container;
+  @media ($desktop-min) {
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    margin-bottom: 50px;
+  }
+}
