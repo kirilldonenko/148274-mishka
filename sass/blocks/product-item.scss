@@ -4,6 +4,8 @@
   border: 1px solid $border-color--light;
   @media ($tablet) {
     height: 335px;
+    display: flex;
+    flex-direction: row;
   }
   @media ($desktop-min){
     height: auto;
