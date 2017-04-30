@@ -16,17 +16,17 @@
   padding-bottom: 15px;
   text-align: center;
   font-size: 16px;
-  color: #5d5d5d;
-  border: 2px solid #ececec;
+  color: $text-color--muted;
+  border: 2px solid $border-color--light;
   &:hover{
-    border-color: #c7c7c7;
+    border-color: $border-color;
   }
   @media ($tablet) {
     width: 107px;
   }
 }
 .form-modal__input:checked + .form-modal__label{
-  border-color: $color-base;
+  border-color: $brand-color--light;
 }
 .form-modal__input{
   display: none;
@@ -40,8 +40,8 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
-  background-color: $color-base;
-  color: #ffffff;
+  background-color: $brand-color--light;
+  color: $white;
   border-style: none;
   @media ($tablet) {
     width: 350px;

@@ -6,7 +6,7 @@
     padding-top: 50px;
     padding-bottom: 78px;
   }
-  @media ($desktop-min) {
+  @media ($desktop) {
     width: 700px;
     padding-top: 59px;
     padding-bottom: 60px;
@@ -22,7 +22,7 @@
     font-size: 43px;
     line-height: 50px;
   }
-  @media ($desktop-min) {
+  @media ($desktop) {
     padding-left: 175px;
     font-size: 53px;
     line-height: 57px;
@@ -40,7 +40,7 @@
     flex-wrap: wrap;
     margin-top: -7px;
   }
-  @media ($desktop-min){
+  @media ($desktop){
     width: 700px;
     margin-top: -10px;
     padding-left: 175px;
@@ -79,7 +79,7 @@
       order:5;
     }
   }
-  @media ($desktop-min){
+  @media ($desktop){
     width: 330px;
     padding-top: 112px;
     padding-right: 20px;
@@ -126,7 +126,7 @@
       top: 59px;
     }
   }
-  @media ($desktop-min) {
+  @media ($desktop) {
     top: 60px;
 
     &--eco {

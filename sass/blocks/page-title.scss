@@ -1,6 +1,6 @@
 .page-title {
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: $bg-color;
   border-top: 1px solid $border-color--light;
   @media ($tablet){
     margin-top: -102px;
@@ -21,7 +21,7 @@
       z-index: 5;
     }
   }
-  @media ($desktop-min) {
+  @media ($desktop) {
     margin-top: -82px;
     margin-bottom: 130px;
     &::after {
@@ -42,7 +42,7 @@
     font-size: 43px;
     line-height: 50px;
   }
-  @media ($desktop-min){
+  @media ($desktop){
     padding-top: 65px;
     padding-bottom: 110px;
     font-size: 53px;

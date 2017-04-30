@@ -12,7 +12,7 @@
     font-size: 17px;
     background-size: auto 17px;
   }
-  @media ($desktop-min){
+  @media ($desktop){
     padding-bottom: 95px;
     font-size: 17px;
     background-size:  auto 23px;
@@ -34,7 +34,7 @@
       background-size: 350px auto;
     }
   }
-  @media ($desktop-min){
+  @media ($desktop){
     padding-top: 70px;
     padding-bottom: 60px;
     background: url('../img/review@1x.jpg') no-repeat left;
@@ -57,7 +57,7 @@
     font-size: 43px;
     line-height: 45px;
   }
-  @media ($desktop-min){
+  @media ($desktop){
     margin-bottom: 48px;
     margin-left: 175px;
     font-size: 53px;
@@ -67,7 +67,7 @@
 .reviews__item{
   margin: 0;
   margin-bottom: 30px;
-  @media ($desktop-min) {
+  @media ($desktop) {
     margin-left: 175px;
     margin-right: 100px;
   }
@@ -78,7 +78,7 @@
   @media ($tablet) {
   margin-bottom: 60px;
   }
-  @media ($desktop-min){
+  @media ($desktop){
     margin-bottom: 40px;
 
   }
@@ -108,7 +108,7 @@
     margin-left: 495px;
     width: 172px;
   }
-  @media ($desktop-min) {
+  @media ($desktop) {
     margin-top: -85px;
     margin-left: 875px;
     width: 175px;
@@ -143,7 +143,7 @@
     order: -1;
     width: 177px;
   }
-  @media ($desktop-min) {
+  @media ($desktop) {
     margin-top: 10px;
   }
 }

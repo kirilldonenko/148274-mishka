@@ -11,7 +11,7 @@
     font-size: 17px;
     line-height: 30px;
   }
-  @media ($desktop-min) {
+  @media ($desktop) {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
 }
 
 .contacts__data {
-  @media ($desktop-min) {
+  @media ($desktop) {
     width: 300px;
     margin-top: 70px;
     margin-left: 175px;
@@ -53,7 +53,7 @@
       background: url('../img/icon-flag.svg');
     }
   }
-  @media ($desktop-min) {
+  @media ($desktop) {
     width: 300px;
     margin-bottom: 50px;
     font-size: 53px;
@@ -83,7 +83,7 @@
     margin: 0;
     padding-right: 17px;
   }
-  @media ($desktop-min) {
+  @media ($desktop) {
     width: 334px;
   }
 }
@@ -130,7 +130,7 @@
       background-size: 768px auto;
       }
   }
-  @media ($desktop-min) {
+  @media ($desktop) {
     width: 525px;
     height: 460px;
     position: absolute;
@@ -157,7 +157,7 @@
     left: 347px;
   }
 
-  @media ($desktop-min) {
+  @media ($desktop) {
     left: 237px;
   }
 }
@@ -167,7 +167,7 @@
     width: 230px;
     margin: 0 auto;
   }
-  @media ($desktop-min) {
+  @media ($desktop) {
     margin-left: 0;
     margin-top: 72px;
   }

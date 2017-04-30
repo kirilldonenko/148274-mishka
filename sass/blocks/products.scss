@@ -1,6 +1,6 @@
 .products{
   @include container;
-  @media ($desktop-min) {
+  @media ($desktop) {
     display: flex;
     justify-content: space-between;
     align-content: stretch;
