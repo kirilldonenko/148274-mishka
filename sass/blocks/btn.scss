@@ -12,4 +12,12 @@
   font-weight: bold;
   color: $text-color--muted;
   border: 2px solid $border-color--dark;
+  &:hover {
+    color: $white;
+    background: $border-color--dark;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 }
