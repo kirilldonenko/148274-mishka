@@ -60,14 +60,14 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 32px;
+  top: 15px;
   right: 31px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: -15px;
+    top: 0;
     right: 0;
     width: 20px;
     height: 2px;
