@@ -13,7 +13,6 @@ var imagemin = require("gulp-imagemin");
 var jsmin = require("gulp-jsmin");
 var run = require("run-sequence");
 var del = require("del");
-var server = require("browser-sync").create();
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
