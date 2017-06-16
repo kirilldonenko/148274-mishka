@@ -1,9 +1,0 @@
-.products{
-  @include container;
-  @media ($desktop) {
-    display: flex;
-    justify-content: space-between;
-    align-content: stretch;
-    margin-bottom: 50px;
-  }
-}
